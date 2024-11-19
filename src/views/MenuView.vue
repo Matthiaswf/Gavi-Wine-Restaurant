@@ -151,7 +151,10 @@
         <div class="menu-wrap">
           <div class="menu-title">Steak</div>
           <div class="dish">
-            <div class="dish-name">Grilled Ribeye Steak</div>
+            <div class="dish-name">
+              Strip Loin Steak 1+ Grade with Roasted Garlic and French Cream
+              Style Escargot
+            </div>
             <div class="dish price">45</div>
           </div>
         </div>
