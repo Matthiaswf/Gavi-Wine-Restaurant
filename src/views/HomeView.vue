@@ -64,7 +64,7 @@ export default {
 <style scoped>
 .swiper {
   width: 100%;
-  height: calc(100vh - 30px);
+  height: 100vh;
 }
 .swiper-item {
   width: 100%;
