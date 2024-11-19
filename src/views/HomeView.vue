@@ -50,6 +50,7 @@ export default {
     };
     return {
       onSwiper,
+      onSlideChange,
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade],
     };
   },
