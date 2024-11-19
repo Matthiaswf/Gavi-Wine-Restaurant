@@ -31,5 +31,9 @@ export default {
 .router-view {
   flex: 1;
   padding: 1rem;
+  overflow-y: auto;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 </style>

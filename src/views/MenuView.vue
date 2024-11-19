@@ -118,7 +118,7 @@
       </div>
       <div v-if="filter === 'Main Dishes'" class="menu">
         <div class="menu-wrap">
-          <div class="menu-title">Pasta</div>
+          <div class="menu-title">PASTA</div>
           <div class="dish">
             <div class="dish-name">Sicilian Spaghetti Norma</div>
             <div class="dish price">22</div>
@@ -149,7 +149,7 @@
           </div>
         </div>
         <div class="menu-wrap">
-          <div class="menu-title">Steak</div>
+          <div class="menu-title">STEAK</div>
           <div class="dish">
             <div class="dish-name">
               Strip Loin Steak 1+ Grade with Roasted Garlic and French Cream
@@ -175,7 +175,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 /* Fade in Animation */
 @keyframes fadeIn {
   from {
