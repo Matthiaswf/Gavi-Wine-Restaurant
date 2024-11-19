@@ -37,7 +37,6 @@ export default {
 .container {
   min-height: 100%;
   color: var(--primary);
-  border-right: 1px solid var(--primary);
   display: flex;
   flex-direction: column;
   align-items: center;

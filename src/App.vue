@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
     <Navbar class="navbar" />
-    <router-view />
+    <router-view class="router-view" />
   </div>
 </template>
 <script>
@@ -25,6 +25,10 @@ export default {
   position: sticky;
   top: 0;
   height: 100vh;
-  width: 250px;
+  min-width: 250px;
+}
+.router-view {
+  flex: 1;
+  padding: 1rem;
 }
 </style>

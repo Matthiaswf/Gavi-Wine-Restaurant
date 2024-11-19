@@ -1,15 +1,15 @@
 <template>
-  <div>Hero</div>
   <Swiper
     :modules="modules"
     :slides-per-view="1"
     :space-between="50"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
+    class="swiper"
   >
-    <SwiperSlide>Slide 1</SwiperSlide>
-    <SwiperSlide>Slide 2</SwiperSlide>
-    <SwiperSlide>Slide 3</SwiperSlide>
+    <SwiperSlide><div class="swiper-item item1"></div></SwiperSlide>
+    <SwiperSlide><div class="swiper-item item2"></div></SwiperSlide>
+    <SwiperSlide><div class="swiper-item item3"></div></SwiperSlide>
     <!-- Add more slides as needed -->
   </Swiper>
 </template>
@@ -47,3 +47,28 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.swiper {
+  width: 100%;
+  height: 1600px;
+}
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  overflow: hidden;
+}
+.item1 {
+  background-image: url('../assets/sliderImages/slider1.jpg');
+}
+.item2 {
+  background-image: url('../assets/sliderImages/slider2.jpg');
+}
+.item3 {
+  background-image: url('../assets/sliderImages/slider3.jpg');
+}
+</style>
