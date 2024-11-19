@@ -16,6 +16,7 @@
     <SwiperSlide><div class="swiper-item item3"></div></SwiperSlide>
     <SwiperSlide><div class="swiper-item item4"></div></SwiperSlide>
     <!-- Add more slides as needed -->
+    <div class="swiper-logo">Gavi</div>
   </Swiper>
 </template>
 
@@ -65,6 +66,9 @@ export default {
 .swiper {
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .swiper-item {
   width: 100%;
@@ -86,5 +90,21 @@ export default {
 }
 .item4 {
   background-image: url('../assets/sliderImages/slider4.jpg');
+}
+@font-face {
+  font-family: 'CustomFont';
+  src: url('@/assets/fonts/Hamline.ttf') format('truetype'),
+    url('@/assets/fonts/Hamline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.swiper-logo {
+  font-family: 'CustomFont';
+  position: absolute;
+  top: 85%;
+  font-size: 8rem;
+  color: white;
+  text-align: center;
+  z-index: 1;
 }
 </style>
