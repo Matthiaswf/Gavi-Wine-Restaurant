@@ -1,6 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import MenuView from '@/views/MenuView.vue';
+import ReserveView from '@/views/ReserveView.vue';
+import WineView from '@/views/WineView.vue';
+import StoryView from '@/views/StoryView.vue';
+import EventsView from '@/views/EventsView.vue';
+import InfoView from '@/views/InfoView.vue';
+import ContactView from '@/views/ContactView.vue';
 
 const routes = [
   {
@@ -12,6 +18,36 @@ const routes = [
     path: '/menu',
     name: 'menu',
     component: MenuView,
+  },
+  {
+    path: '/reserve',
+    name: 'reserve',
+    component: ReserveView,
+  },
+  {
+    path: '/wine',
+    name: 'wine',
+    component: WineView,
+  },
+  {
+    path: '/story',
+    name: 'story',
+    component: StoryView,
+  },
+  {
+    path: '/events',
+    name: 'events',
+    component: EventsView,
+  },
+  {
+    path: '/info',
+    name: 'info',
+    component: InfoView,
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: ContactView,
   },
 ];
 

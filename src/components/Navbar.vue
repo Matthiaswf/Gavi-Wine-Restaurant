@@ -6,13 +6,40 @@
       Haeundae, Busan
     </div>
     <ul class="nav-links">
-      <li>RESERVE</li>
-      <li>MENU</li>
-      <li>WINE SELECTION</li>
-      <li>OUR STORY</li>
-      <li>EVENTS</li>
-      <li>HOURS AND LOCATION</li>
-      <li>CONTACT</li>
+      <li>
+        <router-link to="/reserve" active-class="active-link"
+          >RESERVE</router-link
+        >
+      </li>
+      <li>
+        <router-link to="/menu" active-class="active-link">MENU</router-link>
+      </li>
+      <li>
+        <router-link to="/wine" active-class="active-link"
+          >WINE SELECTION</router-link
+        >
+      </li>
+      <li>
+        <router-link to="/story" active-class="active-link"
+          >OUR STORY</router-link
+        >
+      </li>
+
+      <li>
+        <router-link to="/events" active-class="active-link"
+          >EVENTS</router-link
+        >
+      </li>
+      <li>
+        <router-link to="/info" active-class="active-link"
+          >HOURS AND LOCATION</router-link
+        >
+      </li>
+      <li>
+        <router-link to="/contact" active-class="active-link"
+          >CONTACT</router-link
+        >
+      </li>
     </ul>
   </div>
 </template>
@@ -72,5 +99,8 @@ export default {
   text-align: center;
   padding: 10px 0px;
   cursor: pointer;
+}
+.active-link {
+  color: black;
 }
 </style>
