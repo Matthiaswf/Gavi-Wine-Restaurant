@@ -1,5 +1,61 @@
-/* Variables */
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --background: #ffffff;
-  --text: #884745;
+  --primary: #884745;
+  --text: black;
+}
+/* Global Styles */
+body {
+  font-family: 'Lora';
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lora';
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 3.366rem; /* 53.92px */
+}
+
+h2 {
+  font-size: 2.525rem; /* 40.32px */
+}
+
+h3 {
+  font-size: 1.894rem; /* 30.24px */
+}
+
+h4 {
+  font-size: 1.421rem; /* 22.72px */
+}
+
+h5 {
+  font-size: 1.066rem; /* 17.12px */
+}
+
+small {
+  font-size: 0.6rem; /* 9.6px */
 }

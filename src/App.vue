@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Navbar />
+  <div class="app-container">
+    <Navbar class="navbar" />
     <router-view />
   </div>
 </template>
@@ -12,4 +12,19 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  overflow: auto;
+}
+
+.navbar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+}
+</style>

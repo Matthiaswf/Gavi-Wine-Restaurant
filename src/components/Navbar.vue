@@ -1,5 +1,19 @@
 <template>
-  <div>Gavi</div>
+  <div class="container">
+    <div class="logo">Gavi</div>
+    <div class="address">
+      Jwadong Sunhwan Ro 8 Beon Gil 78<br />
+      Haeundae, Busan
+    </div>
+    <ul class="nav-links">
+      <li>Reserve</li>
+      <li>Menu</li>
+      <li>Wine Selection</li>
+      <li>Our Story</li>
+      <li>Hours and Location</li>
+      <li>Contact</li>
+    </ul>
+  </div>
 </template>
 
 <script>
@@ -19,7 +33,44 @@ export default {
   font-style: normal;
 }
 
-div {
+.container {
+  min-height: 100%;
+  color: var(--primary);
+  border-right: 1px solid var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Lora, serif;
+  padding: 1rem;
+}
+.logo {
   font-family: 'CustomFont', sans-serif;
+  font-size: 6rem;
+  padding: 15% 0% 10%;
+  cursor: pointer;
+}
+.address {
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 400;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 30px 0px;
+}
+.nav-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10% 0%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.nav-links li {
+  text-align: center;
+  padding: 10px 0px;
+  cursor: pointer;
 }
 </style>
