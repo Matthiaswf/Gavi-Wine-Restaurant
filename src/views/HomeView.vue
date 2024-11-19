@@ -8,6 +8,8 @@
     class="swiper"
     :allow-touch-move="false"
     :autoplay="{ delay: 2000, disableOnInteraction: false }"
+    :effect="'fade'"
+    :speed="2000"
   >
     <SwiperSlide><div class="swiper-item item1"></div></SwiperSlide>
     <SwiperSlide><div class="swiper-item item2"></div></SwiperSlide>
@@ -35,6 +37,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/effect-fade';
 
 export default {
   components: {
