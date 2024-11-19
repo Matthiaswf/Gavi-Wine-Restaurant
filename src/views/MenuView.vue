@@ -82,7 +82,7 @@
             <div class="dish price">15</div>
           </div>
         </div>
-        <div class="menu-container">
+        <div class="menu-wrap">
           <div class="menu-title">CHEESE & CHARCUTERIE</div>
           <div class="dish">
             <div class="dish-name">
@@ -113,6 +113,46 @@
           <div class="dish">
             <div class="dish-name">8 Assorted Cheeses & Fruits Platter</div>
             <div class="dish price">53</div>
+          </div>
+        </div>
+      </div>
+      <div v-if="filter === 'Main Dishes'" class="menu">
+        <div class="menu-wrap">
+          <div class="menu-title">Pasta</div>
+          <div class="dish">
+            <div class="dish-name">Sicilian Spaghetti Norma</div>
+            <div class="dish price">22</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Lasagne with Ragu Sauce & Three Cheeses</div>
+            <div class="dish price">26</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Calamari Ink Spaghetti</div>
+            <div class="dish price">24</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Spicy Chicken Creamy Pasta</div>
+            <div class="dish price">23</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Black Olive & Anchovy Tapenade Pasta</div>
+            <div class="dish price">23</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Homemade Basil Pesto Pasta</div>
+            <div class="dish price">23</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Homemade Chicken Pesto Pasta</div>
+            <div class="dish price">24</div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">Steak</div>
+          <div class="dish">
+            <div class="dish-name">Grilled Ribeye Steak</div>
+            <div class="dish price">45</div>
           </div>
         </div>
       </div>
