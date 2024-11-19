@@ -33,6 +33,18 @@ export default {
 </script>
 
 <style scoped>
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.reserve-container {
+  animation: fadeIn 1s ease-in;
+}
 @font-face {
   font-family: 'CustomFont';
   src: url('@/assets/fonts/Hamline.ttf') format('truetype'),
