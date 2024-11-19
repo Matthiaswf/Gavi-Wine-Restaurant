@@ -101,7 +101,7 @@ export default {
 .swiper-logo {
   font-family: 'CustomFont';
   position: absolute;
-  top: 85%;
+  top: 80%;
   font-size: 8rem;
   color: white;
   text-align: center;
