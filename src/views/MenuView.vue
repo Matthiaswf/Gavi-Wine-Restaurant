@@ -133,6 +133,31 @@ export default {
 </script>
 
 <style>
+/* Fade in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu-container,
+.introduction,
+.title,
+.menu-text,
+.filter,
+.menu,
+.menu-wrap,
+.menu-title,
+.dish,
+.dish-name,
+.dish.price {
+  animation: fadeIn 1s ease-in-out;
+}
+/* Fade in Animation */
+
 .menu-container {
   display: flex;
   flex-direction: column;
