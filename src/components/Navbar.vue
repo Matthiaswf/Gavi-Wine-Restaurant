@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="logo">Gavi</div>
+    <router-link to="/"><div class="logo">Gavi</div></router-link>
     <div class="address">
       Jwadong Sunhwan Ro 8 Beon Gil 78<br />
       Haeundae, Busan
