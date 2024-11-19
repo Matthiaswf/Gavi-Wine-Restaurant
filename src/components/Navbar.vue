@@ -6,12 +6,13 @@
       Haeundae, Busan
     </div>
     <ul class="nav-links">
-      <li>Reserve</li>
-      <li>Menu</li>
-      <li>Wine Selection</li>
-      <li>Our Story</li>
-      <li>Hours and Location</li>
-      <li>Contact</li>
+      <li>RESERVE</li>
+      <li>MENU</li>
+      <li>WINE SELECTION</li>
+      <li>OUR STORY</li>
+      <li>EVENTS</li>
+      <li>HOURS AND LOCATION</li>
+      <li>CANTACT</li>
     </ul>
   </div>
 </template>
