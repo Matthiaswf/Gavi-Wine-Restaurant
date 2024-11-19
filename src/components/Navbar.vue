@@ -12,7 +12,7 @@
       <li>OUR STORY</li>
       <li>EVENTS</li>
       <li>HOURS AND LOCATION</li>
-      <li>CANTACT</li>
+      <li>CONTACT</li>
     </ul>
   </div>
 </template>
