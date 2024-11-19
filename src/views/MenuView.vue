@@ -160,9 +160,20 @@ export default {
   font-size: 1rem;
   font-weight: 300;
 }
-
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  max-width: 1010px;
+  text-align: left;
+}
 button {
   height: 50px;
+  width: 190px;
+
   padding: 1rem 1rem 0.8rem;
   background-color: transparent;
   border: 1px solid var(--primary);
@@ -172,6 +183,7 @@ button {
   text-align: center;
   margin-left: 1em;
   margin-right: 1em;
+  margin-top: 1em;
   cursor: pointer;
 }
 button.active {
