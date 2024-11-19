@@ -6,6 +6,8 @@
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     class="swiper"
+    :allow-touch-move="false"
+    :autoplay="{ delay: 2000, disableOnInteraction: false }"
   >
     <SwiperSlide><div class="swiper-item item1"></div></SwiperSlide>
     <SwiperSlide><div class="swiper-item item2"></div></SwiperSlide>
@@ -16,7 +18,14 @@
 
 <script>
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+  EffectFade,
+} from 'swiper/modules';
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue';
@@ -41,8 +50,7 @@ export default {
     };
     return {
       onSwiper,
-      onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar, A11y],
+      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade],
     };
   },
 };
@@ -51,7 +59,7 @@ export default {
 <style scoped>
 .swiper {
   width: 100%;
-  height: 1600px;
+  height: calc(100vh - 30px);
 }
 .swiper-item {
   width: 100%;
