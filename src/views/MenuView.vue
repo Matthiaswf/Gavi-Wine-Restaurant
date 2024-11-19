@@ -1,7 +1,7 @@
 <template>
   <div class="menu-container">
     <div class="introduction">
-      <div class="title">Menus</div>
+      <div class="title">Menu</div>
       <div class="menu-text">
         <p>
           Making good food requires fresh ingredients, proper techniques, and a
@@ -215,7 +215,7 @@ button.active {
 .menu-title {
   width: 100%;
   font-size: 2.4rem;
-  font-weight: 800;
+  font-weight: 100;
   font-style: italic;
   text-align: left;
 }
