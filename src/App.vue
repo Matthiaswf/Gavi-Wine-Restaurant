@@ -14,10 +14,11 @@ export default {
 </script>
 <style scoped>
 .app-container {
+  height: 100vh;
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .navbar {
