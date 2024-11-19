@@ -90,7 +90,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 }
 .title {
   width: 100%;
