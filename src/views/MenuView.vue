@@ -50,10 +50,70 @@
           Pizza
         </button>
       </nav>
-      <div class="menu-items">
-        <div v-for="item in getMenuItems()" :key="item.title" class="menu-item">
-          <div class="item-title">{{ item.title }}</div>
-          <div class="item-price">{{ item.price }}</div>
+
+      <!-- Menus -->
+      <div v-if="filter === 'Starters and Sides'" class="menu">
+        <div class="menu-wrap">
+          <div class="menu-title">STARTERS & SIDES</div>
+          <div class="dish">
+            <div class="dish-name">
+              Chili Bean Cheese Dipping Sauce & Tortilla Nachos
+            </div>
+            <div class="dish price">13</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Deep-fried Seaweed</div>
+            <div class="dish price">12</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Chevre Goat Cheese, Lindon Honey & French Pastry
+            </div>
+            <div class="dish price">13</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Crispy French Fries (with Truffle Aioli Dipping Sauce)
+            </div>
+            <div class="dish price">15</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Spanish Style Garlic Shrimp Tapas</div>
+            <div class="dish price">15</div>
+          </div>
+        </div>
+        <div class="menu-container">
+          <div class="menu-title">CHEESE & CHARCUTERIE</div>
+          <div class="dish">
+            <div class="dish-name">
+              Jamon Serrano, Chevre Goat Cheese & Seasonal Fruit
+            </div>
+            <div class="dish price">22</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Nuts, Apple Chutney & Roasted Brie Cheese
+            </div>
+            <div class="dish price">25</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Cherry Tomato & Brie Cheese Bruschetta</div>
+            <div class="dish price">20</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Green Olives, Roasted Brie Cheese & Fruits Platter
+            </div>
+            <div class="dish price">40</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">8 Assorted Cheeses Platter</div>
+            <div class="dish price">38</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">8 Assorted Cheeses & Fruits Platter</div>
+            <div class="dish price">53</div>
+          </div>
         </div>
       </div>
     </div>
@@ -64,244 +124,9 @@
 import { ref } from 'vue';
 export default {
   setup() {
-    // Menu Data
-
-    const startersAndSides = {
-      'Starters and Sides': {
-        title: 'Starters and Sides',
-        items: [
-          {
-            title: 'Chili Bean Cheese Dipping Sauce & Tortilla Nachos',
-            price: '$5.99',
-          },
-          { title: 'Deep-fried Seaweed (New)', price: '$4.99' },
-          {
-            title: 'Chevre Goat Cheese, Lindon Honey & French Pastry *New',
-            price: '$6.99',
-          },
-          {
-            title:
-              'Crispy French Fries (with Truffle Aioli Dipping Sauce) *New',
-            price: '$3.99',
-          },
-          { title: 'Spanish Style Garlic Shrimp Tapas', price: '$7.99' },
-          { title: 'Assorted Olives', price: '$3.49' },
-        ],
-      },
-      'Cheese & Charcuterie': {
-        title: 'Cheese & Charcuterie',
-        items: [
-          {
-            title: 'Jamon Serrano, Chevre Goat Cheese & Seasonal Fruit',
-            price: '$8.99',
-          },
-          { title: 'Cherry Tomato & Brie Cheese Bruschetta', price: '$6.99' },
-
-          {
-            title: 'Green Olives, Roasted Brie Cheese & Fruits Platter',
-            price: '$9.99',
-          },
-
-          { title: '8 Assorted Cheeses Platter', price: '$12.99' },
-
-          { title: '8 Assorted Cheeses & Fruits Platter', price: '$14.99' },
-
-          {
-            title: 'Charcuterie Platter (Jamon Serrano & Salami)',
-            price: '$10.99',
-          },
-          { title: '8 Assorted Cheeses & Fruits Platter', price: '$14.99' },
-          {
-            title: 'Charcuterie Platter (Jamon Serrano & Salami)',
-            price: '$15.00',
-          },
-        ],
-      },
-    };
-    const mainDishes = {
-      'Main Dishes': {
-        title: 'Pasta',
-        items: [
-          {
-            title: 'Sicilian Spaghetti Norma',
-            price: '$15.99',
-          },
-          { title: 'Lasagne with Ragu Sauce & Three Cheeses', price: '$12.99' },
-          {
-            title: 'Calamari Ink Spaghetti',
-            price: '$18.99',
-          },
-          {
-            title: 'Spicy Chicken Creamy Pasta',
-            price: '$14.99',
-          },
-          { title: 'Black Olive & Anchovy Tapenade Pasta', price: '$17.99' },
-          { title: 'Homemade Basil Pesto Pasta', price: '$16.99' },
-          { title: 'Homemade Chicken Pesto Pasta', price: '$17.99' },
-        ],
-      },
-      Steak: {
-        title: 'Steak',
-        items: [
-          {
-            title:
-              'Strip Loin Steak 1+ Grade with Roasted Garlic and French Cream Style Escargot',
-            price: '$29.99',
-          },
-        ],
-      },
-    };
-    const salads = {
-      Salads: {
-        title: 'Salads',
-        items: [
-          {
-            title: 'Classic Greek Salad',
-            price: '$8.99',
-          },
-          {
-            title: 'Classic Caesar Salad',
-            price: '$9.99',
-          },
-          {
-            title: 'Cajun Shrimp & Hawaiian Style Salad',
-            price: '$10.99',
-          },
-          {
-            title: 'Buffalo Burrata Cheese & Wild Rucola Salad',
-            price: '$11.99',
-          },
-        ],
-      },
-    };
-    const veganAndVegetarian = {
-      'Main Pasta': {
-        title: 'Main Pasta',
-        items: [
-          {
-            title: 'Sicilian Spaghetti Norma',
-            price: '$12.99',
-          },
-          {
-            title: 'Basil Pesto Pasta',
-            price: '$14.99',
-          },
-        ],
-      },
-      'Wine Side Menu': {
-        title: 'Main Pasta',
-        items: [
-          {
-            title: 'Chili Bean Cheese Dipping Sauce and Nachos',
-            price: '$12.99',
-          },
-          {
-            title: 'Crispy French Fries with Truffle Aioli Dipping Sauce',
-            price: '$14.99',
-          },
-          {
-            title: 'Assorted Olives',
-            price: '$14.99',
-          },
-        ],
-      },
-      Salad: {
-        title: 'Salad',
-        items: [
-          {
-            title: 'Classic Mediterranean Greek Salad',
-            price: '$12.99',
-          },
-          {
-            title: 'Buffalo Burrata Cheese & Wild Rucola Salad',
-            price: '$14.99',
-          },
-        ],
-      },
-    };
-    const pizza = {
-      Pizza: {
-        title: 'Pizza',
-        items: [
-          {
-            title: 'Tasty Sicilian Anchovy, Black Olive & Mozzarella Cheese',
-            price: '$12.99',
-          },
-          {
-            title:
-              'Homemade Basil Pesto, Buffalo Burrata Cheese & Sundried Tomato',
-            price: '$14.99',
-          },
-          {
-            title:
-              'Jamon Serrano, Fresh Wild Rucola, Sundried Tomato & Mozzarella Cheese',
-            price: '$14.99',
-          },
-          {
-            title: 'Pepperoni & Mozzarella',
-            price: '$14.99',
-          },
-          {
-            title: 'omemade Dried Fig & Three Cheeses',
-            price: '$14.99',
-          },
-        ],
-      },
-    };
-    const drinksAndDesserts = {
-      'Drinks and Desserts': {
-        title: 'Drinks and Desserts',
-        items: [
-          {
-            title: 'Classic Tiramisu',
-            price: '$6.99',
-          },
-          {
-            title: 'Homemade Chocolate Lava Cake',
-            price: '$7.99',
-          },
-          {
-            title: 'Homemade Vanilla Ice Cream',
-            price: '$5.99',
-          },
-          {
-            title: 'Homemade Chocolate Ice Cream',
-            price: '$5.99',
-          },
-        ],
-      },
-    };
-
-    // Filter Menu Items
-    const getMenuItems = () => {
-      switch (filter.value) {
-        case 'Starters and Sides':
-          return startersAndSides['Starters and Sides'].items;
-        case 'Main Dishes':
-          return mainDishes['Main Dishes'].items;
-        case 'Salads':
-          return salads['Salads'].items;
-        case 'Vegan and Vegetarian':
-          return veganAndVegetarian['Main Pasta'].items;
-        case 'Pizza':
-          return pizza['Pizza'].items;
-        case 'Drinks and Desserts':
-          return drinksAndDesserts['Drinks and Desserts'].items;
-        default:
-          return startersAndSides['Starters and Sides'].items;
-      }
-    };
-
     const filter = ref('Starters and Sides');
     return {
       filter,
-      startersAndSides,
-      mainDishes,
-      salads,
-      veganAndVegetarian,
-      pizza,
-      drinksAndDesserts,
-      getMenuItems,
     };
   },
 };
@@ -321,7 +146,6 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
   padding: 1rem;
   max-width: 1010px;
   text-align: left;
@@ -353,5 +177,50 @@ button {
 button.active {
   border: 1px solid grey;
   color: black;
+}
+/* Menu Styling */
+.menu {
+  width: 100%;
+  display: flex;
+  flex: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 2rem;
+  padding: 1rem;
+  max-width: 1010px;
+  text-align: left;
+}
+.menu-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Unna', serif;
+  width: 100%;
+  height: 100%;
+}
+.menu-title {
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+}
+.dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+.dish-name {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.dish.price {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
 }
 </style>
