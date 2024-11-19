@@ -7,7 +7,7 @@
     </div>
     <ul class="nav-links">
       <li>RESERVE</li>
-      <li>MENUS</li>
+      <li>MENU</li>
       <li>WINE SELECTION</li>
       <li>OUR STORY</li>
       <li>EVENTS</li>

@@ -214,15 +214,16 @@ export default {
   padding: 1rem;
   max-width: 1010px;
   text-align: left;
+  margin-top: 40px;
 }
 .title {
   font-family: 'Unna', serif;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 100;
   font-style: italic;
 }
 .menu-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
 .filter {
@@ -230,7 +231,8 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   padding: 1rem;
   max-width: 1010px;
   text-align: left;
