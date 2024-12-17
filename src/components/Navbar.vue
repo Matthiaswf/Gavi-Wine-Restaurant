@@ -31,13 +31,8 @@
         >
       </li>
       <li>
-        <router-link to="/info" active-class="active-link"
-          >HOURS AND LOCATION</router-link
-        >
-      </li>
-      <li>
         <router-link to="/contact" active-class="active-link"
-          >CONTACT</router-link
+          >CONTACT AND LOCATION</router-link
         >
       </li>
     </ul>

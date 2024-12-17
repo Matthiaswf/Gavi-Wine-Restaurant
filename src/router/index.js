@@ -5,7 +5,6 @@ import ReserveView from '@/views/ReserveView.vue';
 import WineView from '@/views/WineView.vue';
 import StoryView from '@/views/StoryView.vue';
 import EventsView from '@/views/EventsView.vue';
-import InfoView from '@/views/InfoView.vue';
 import ContactView from '@/views/ContactView.vue';
 
 const routes = [
@@ -38,11 +37,6 @@ const routes = [
     path: '/events',
     name: 'events',
     component: EventsView,
-  },
-  {
-    path: '/info',
-    name: 'info',
-    component: InfoView,
   },
   {
     path: '/contact',
