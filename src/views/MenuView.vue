@@ -14,6 +14,12 @@
       <!-- Filter Nav -->
       <nav class="filter">
         <button
+          @click="filter = 'Dinner Course'"
+          :class="{ active: filter === 'Dinner Course' }"
+        >
+          Dinner Course
+        </button>
+        <button
           @click="filter = 'Starters and Sides'"
           :class="{ active: filter === 'Starters and Sides' }"
         >
@@ -52,6 +58,32 @@
       </nav>
 
       <!-- Menus -->
+      <div v-if="filter === 'Dinner Course'" class="menu">
+        <div class="menu-wrap">
+          <div class="menu-title">APPETIZER</div>
+          <div class="dish">
+            <div class="dish-name">
+              Jamon Serrano, Chevre Goat Cheese & Seasonal Fruit
+            </div>
+          </div>
+          <div class="menu-title">Soup</div>
+          <div class="dish">
+            <div class="dish-name">
+              Tomato Stew With Scallops, Sea Shell, Black Tiger Shrimp & Tilapia
+              Fish
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              French Cream Style Escargot& Roasted Garlic
+            </div>
+          </div>
+          <div class="menu-title">MAIN COURSE</div>
+          <div class="dish">
+            <div class="dish-name">Korean Strip Loin Steak 1+ Grade (180g)</div>
+          </div>
+        </div>
+      </div>
       <div v-if="filter === 'Starters and Sides'" class="menu">
         <div class="menu-wrap">
           <div class="menu-title">STARTERS & SIDES</div>
@@ -140,6 +172,160 @@
           </div>
         </div>
       </div>
+      <div v-if="filter === 'Salads'" class="menu">
+        <div class="menu-wrap">
+          <div class="menu-title">SALADS</div>
+          <div class="dish">
+            <div class="dish-name">Classic Greek Salad</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Classic Caesar Salad</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Cajun Shrimp & Hawaiian Style Salad</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Buffalo Burrata Cheese & Wild Rucola Salad
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-if="filter === 'Pizza'" class="menu">
+        <div class="menu-wrap">
+          <div class="menu-title">PIZZA</div>
+          <div class="dish">
+            <div class="dish-name">
+              Tasty Sicilian Anchovy, Black Olive & Mozzarella Cheese
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Homemade Basil Pesto, Buffalo Burrata Cheese & Sundried Tomato
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Homemade Dried Fig & Three Cheeses</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Jamon Serrano, Fresh Wild Rucola, Sundried Tomato & Mozzarella
+              Cheese
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Pepperoni & Mozzarella</div>
+          </div>
+        </div>
+      </div>
+      <div v-if="filter === 'Vegan and Vegetarian'" class="menu">
+        <div class="menu-wrap">
+          <div class="menu-title">PASTA</div>
+          <div class="dish">
+            <div class="dish-name">Sicilian Spaghetti Norma</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Basil Pesto Pasta</div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">STARTERS & SIDES</div>
+          <div class="dish">
+            <div class="dish-name">
+              Chili Bean Cheese Dipping Sauce and Nachos
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Crispy French Fries with Truffle Aioli Dipping Sauce
+            </div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Assorted Olives</div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">SALADS</div>
+          <div class="dish">
+            <div class="dish-name">Classic Mediterranean Greek Salad</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">
+              Buffalo Burrata Cheese & Wild Rucola Salad
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-if="filter === 'Drinks and Desserts'" class="menu">
+        <div class="menu-wrap">
+          <div class="menu-title">DESSERTS</div>
+          <div class="dish">
+            <div class="dish-name">Crème Brulée</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Vanilla Ice Cream</div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">SODA</div>
+          <div class="dish">
+            <div class="dish-name">Sprite</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Coca-Cola</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Sparkling Water</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Home Made Lemonade</div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">COFFEE</div>
+          <div class="dish">
+            <div class="dish">
+              <div class="dish-name">Gavi Blend (French Press)</div>
+            </div>
+            <div class="dish">
+              <div class="dish-name">Drip/Hand Brew</div>
+            </div>
+            <div class="dish">
+              <div class="dish-name">Espresso (Single or Double)</div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">TEA</div>
+          <div class="dish">
+            <div class="dish-name">Honey Bush</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Hibiscus</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Chamomile Lavender</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Lemon Balm</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Peppermint</div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">BOTTLED BEER</div>
+          <div class="dish">
+            <div class="dish-name">Inedit Damm</div>
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <div class="menu-title">DRAFT BEER</div>
+          <div class="dish">
+            <div class="dish-name">Heineken</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -148,7 +334,7 @@
 import { ref } from 'vue';
 export default {
   setup() {
-    const filter = ref('Starters and Sides');
+    const filter = ref('Dinner Course');
     return {
       filter,
     };
@@ -167,6 +353,7 @@ export default {
   }
 }
 
+/* Fade in Animation */
 .menu-container,
 .introduction,
 .title,
@@ -180,8 +367,8 @@ export default {
 .dish.price {
   animation: fadeIn 1s ease-in-out;
 }
-/* Fade in Animation */
 
+/* Top */
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -224,7 +411,6 @@ export default {
 button {
   height: 50px;
   width: 190px;
-
   padding: 1rem 1rem 0.8rem;
   background-color: transparent;
   border: 1px solid var(--primary);
