@@ -59,27 +59,22 @@
             <div class="dish-name">
               Chili Bean Cheese Dipping Sauce & Tortilla Nachos
             </div>
-            <div class="dish price">13</div>
           </div>
           <div class="dish">
             <div class="dish-name">Deep-fried Seaweed</div>
-            <div class="dish price">12</div>
           </div>
           <div class="dish">
             <div class="dish-name">
               Chevre Goat Cheese, Lindon Honey & French Pastry
             </div>
-            <div class="dish price">13</div>
           </div>
           <div class="dish">
             <div class="dish-name">
               Crispy French Fries (with Truffle Aioli Dipping Sauce)
             </div>
-            <div class="dish price">15</div>
           </div>
           <div class="dish">
             <div class="dish-name">Spanish Style Garlic Shrimp Tapas</div>
-            <div class="dish price">15</div>
           </div>
         </div>
         <div class="menu-wrap">
@@ -88,31 +83,25 @@
             <div class="dish-name">
               Jamon Serrano, Chevre Goat Cheese & Seasonal Fruit
             </div>
-            <div class="dish price">22</div>
           </div>
           <div class="dish">
             <div class="dish-name">
               Nuts, Apple Chutney & Roasted Brie Cheese
             </div>
-            <div class="dish price">25</div>
           </div>
           <div class="dish">
             <div class="dish-name">Cherry Tomato & Brie Cheese Bruschetta</div>
-            <div class="dish price">20</div>
           </div>
           <div class="dish">
             <div class="dish-name">
               Green Olives, Roasted Brie Cheese & Fruits Platter
             </div>
-            <div class="dish price">40</div>
           </div>
           <div class="dish">
             <div class="dish-name">8 Assorted Cheeses Platter</div>
-            <div class="dish price">38</div>
           </div>
           <div class="dish">
             <div class="dish-name">8 Assorted Cheeses & Fruits Platter</div>
-            <div class="dish price">53</div>
           </div>
         </div>
       </div>
@@ -121,31 +110,24 @@
           <div class="menu-title">PASTA</div>
           <div class="dish">
             <div class="dish-name">Sicilian Spaghetti Norma</div>
-            <div class="dish price">22</div>
           </div>
           <div class="dish">
             <div class="dish-name">Lasagne with Ragu Sauce & Three Cheeses</div>
-            <div class="dish price">26</div>
           </div>
           <div class="dish">
             <div class="dish-name">Calamari Ink Spaghetti</div>
-            <div class="dish price">24</div>
           </div>
           <div class="dish">
             <div class="dish-name">Spicy Chicken Creamy Pasta</div>
-            <div class="dish price">23</div>
           </div>
           <div class="dish">
             <div class="dish-name">Black Olive & Anchovy Tapenade Pasta</div>
-            <div class="dish price">23</div>
           </div>
           <div class="dish">
             <div class="dish-name">Homemade Basil Pesto Pasta</div>
-            <div class="dish price">23</div>
           </div>
           <div class="dish">
             <div class="dish-name">Homemade Chicken Pesto Pasta</div>
-            <div class="dish price">24</div>
           </div>
         </div>
         <div class="menu-wrap">
@@ -155,7 +137,6 @@
               Strip Loin Steak 1+ Grade with Roasted Garlic and French Cream
               Style Escargot
             </div>
-            <div class="dish price">45</div>
           </div>
         </div>
       </div>
@@ -299,10 +280,7 @@ button.active {
 .dish-name {
   font-size: 1.3rem;
   font-weight: 400;
-}
-.dish.price {
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin: 0;
+  text-align: left;
+  padding-bottom: 15px;
 }
 </style>
