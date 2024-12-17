@@ -1,10 +1,6 @@
 <template>
   <div class="container">
     <router-link to="/"><div class="logo">Gavi</div></router-link>
-    <div class="address">
-      Jwadong Sunhwan Ro 8 Beon Gil 78<br />
-      Haeundae, Busan
-    </div>
     <ul class="nav-links">
       <li>
         <router-link to="/reserve" active-class="active-link"
@@ -34,6 +30,24 @@
         <router-link to="/contact" active-class="active-link"
           >CONTACT AND LOCATION</router-link
         >
+      </li>
+      <li class="sns-links">
+        <div>
+          <a href="https://www.facebook.com/YoonkyoungSuk/" target="_blank">
+            <img
+              class="sns-icon"
+              src="@/assets/icons/facebook.png"
+              alt="Facebook"
+            />
+          </a>
+          <a href="https://www.instagram.com/gavi_wine" target="_blank">
+            <img
+              class="sns-icon"
+              src="@/assets/icons/instagram.png"
+              alt="Instagram"
+            />
+          </a>
+        </div>
       </li>
     </ul>
   </div>
@@ -72,14 +86,7 @@ export default {
   padding: 15% 0% 10%;
   cursor: pointer;
 }
-.address {
-  font-size: 0.8rem;
-  text-align: center;
-  font-weight: 400;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  padding: 30px 0px;
-}
+
 .nav-links {
   width: 100%;
   display: flex;
@@ -89,6 +96,7 @@ export default {
   padding: 10% 0%;
   font-size: 1rem;
   font-weight: bold;
+  border-top: 1px solid black;
 }
 .nav-links li {
   text-align: center;
@@ -97,5 +105,17 @@ export default {
 }
 .active-link {
   color: black;
+}
+.sns-links {
+  border-top: 1px solid black;
+  width: 90%;
+  padding-top: 25px;
+  margin-top: 40px;
+}
+
+.sns-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px;
 }
 </style>
