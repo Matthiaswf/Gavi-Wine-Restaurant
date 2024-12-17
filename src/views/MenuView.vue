@@ -284,15 +284,13 @@
         <div class="menu-wrap">
           <div class="menu-title">COFFEE</div>
           <div class="dish">
-            <div class="dish">
-              <div class="dish-name">Gavi Blend (French Press)</div>
-            </div>
-            <div class="dish">
-              <div class="dish-name">Drip/Hand Brew</div>
-            </div>
-            <div class="dish">
-              <div class="dish-name">Espresso (Single or Double)</div>
-            </div>
+            <div class="dish-name">Gavi Blend (French Press)</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Drip/Hand Brew</div>
+          </div>
+          <div class="dish">
+            <div class="dish-name">Espresso (Single or Double)</div>
           </div>
         </div>
         <div class="menu-wrap">
@@ -431,8 +429,13 @@ button.active {
 .menu {
   width: 100%;
   display: flex;
-  flex: wrap;
-  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  > * {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+  }
+  align-items: start;
   justify-content: center;
   gap: 20px;
   margin-top: 2rem;
@@ -443,11 +446,11 @@ button.active {
 .menu-wrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: flex-start;
   font-family: 'Unna', serif;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .menu-title {
   width: 100%;
