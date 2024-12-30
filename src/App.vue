@@ -32,7 +32,7 @@ export default {
   flex: 1;
   padding: 1rem;
   overflow-y: auto;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   box-sizing: border-box;
 }
