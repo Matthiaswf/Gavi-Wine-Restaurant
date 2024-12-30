@@ -6,6 +6,23 @@
       <div class="wine-three wine-img"></div>
     </div>
 
+    <div class="introduction">
+      <div class="title">We have a selection of over 500 labels.</div>
+      <div class="menu-text">
+        <p>
+          Maintaining a list of so many old and new vintages, variatals and
+          favorite wines takes time. Please check in often for new updates of
+          selections. If you don’t see a wine you are interested in, please
+          contact us. We have connections with the best wine importers. We will
+          do our best to find that perfect bottle of wine for you.
+        </p>
+        <p>
+          A Corkage fee of 30.000 per bottle will be charged, limit one outside
+          bottle per table.
+        </p>
+      </div>
+    </div>
+
     <!-- Filter Nav -->
     <nav class="filter">
       <button
@@ -36,13 +53,77 @@
       <div class="menu-wrap">
         <div class="menu-title">RED</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">Château Margaux 2015</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Latour 2014</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Mouton Rothschild 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Lafite Rothschild 2013</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Haut-Brion 2012</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Cheval Blanc 2011</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Pétrus 2010</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château d'Yquem 2009</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Palmer 2008</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Cos d'Estournel 2007</div>
         </div>
       </div>
       <div class="menu-wrap">
         <div class="menu-title">WHITE</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">
+            Domaine de la Romanée-Conti Montrachet 2015
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château d'Yquem 2014</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">
+            Domaine Leflaive Chevalier-Montrachet 2016
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Domaine des Comtes Lafon Meursault 2013</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Domaine Roulot Meursault 2012</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">
+            Domaine Coche-Dury Corton-Charlemagne 2011
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">
+            Domaine Jean-Louis Chave Hermitage Blanc 2010
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Domaine de Chevalier Blanc 2009</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Smith Haut Lafitte Blanc 2008</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">
+            Domaine Zind-Humbrecht Riesling Clos Windsbuhl 2007
+          </div>
         </div>
       </div>
     </div>
@@ -50,13 +131,67 @@
       <div class="menu-wrap">
         <div class="menu-title">RED</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">Barolo 2015</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Brunello di Montalcino 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Amarone della Valpolicella 2014</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Chianti Classico 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Barbaresco 2013</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Super Tuscan 2015</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Montepulciano d'Abruzzo 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Nero d'Avola 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Dolcetto d'Alba 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Aglianico del Vulture 2015</div>
         </div>
       </div>
       <div class="menu-wrap">
         <div class="menu-title">WHITE</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">Soave 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Verdicchio dei Castelli di Jesi 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Gavi di Gavi 2019</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Fiano di Avellino 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Greco di Tufo 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Vermentino di Gallura 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Trebbiano d'Abruzzo 2019</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Lugana 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Etna Bianco 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Pinot Grigio 2019</div>
         </div>
       </div>
     </div>
@@ -64,13 +199,67 @@
       <div class="menu-wrap">
         <div class="menu-title">RED</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">Vega Sicilia Único 2010</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Pingus 2011</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">La Rioja Alta Gran Reserva 904 2012</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Bodegas Muga Prado Enea 2013</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Marqués de Murrieta Castillo Ygay 2014</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Alvaro Palacios L'Ermita 2015</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Dominio de Pingus Flor de Pingus 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Bodegas Roda Cirsion 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Artadi Viña El Pisón 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Telmo Rodríguez Las Beatas 2019</div>
         </div>
       </div>
       <div class="menu-wrap">
         <div class="menu-title">WHITE</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">Albariño 2019</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Verdejo 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Godello 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Txakoli 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Viura 2015</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Macabeo 2014</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Xarel-lo 2013</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Parellada 2012</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Malvasia 2011</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Pedro Ximénez 2010</div>
         </div>
       </div>
     </div>
@@ -78,13 +267,69 @@
       <div class="menu-wrap">
         <div class="menu-title">RED</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">Penfolds Grange 2015</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Henschke Hill of Grace 2014</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Opus One 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Screaming Eagle Cabernet Sauvignon 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">
+            Catena Zapata Adrianna Vineyard Malbec 2018
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Concha y Toro Don Melchor 2015</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Almaviva 2016</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Château Musar 2014</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Clos Apalta 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Seña 2018</div>
         </div>
       </div>
       <div class="menu-wrap">
         <div class="menu-title">WHITE</div>
         <div class="dish">
-          <div class="dish-name">Example Wine</div>
+          <div class="dish-name">Cloudy Bay Sauvignon Blanc 2019</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Kim Crawford Sauvignon Blanc 2020</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Chardonnay Reserve 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Riesling Kabinett 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Grüner Veltliner 2019</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Sauvignon Blanc 2020</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Chenin Blanc 2018</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Gewürztraminer 2017</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Pinot Gris 2019</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Viognier 2020</div>
         </div>
       </div>
     </div>
@@ -144,7 +389,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 50%; /* Make the showcase smaller */
+  min-height: 50%; /* Make the showcase smaller */
   gap: 16px;
 }
 .wine-img {
@@ -160,10 +405,31 @@ export default {
   background-image: url('@/assets/wineMenu/1.jpg');
 }
 .wine-two {
-  background-image: url('@/assets/wineMenu/1.jpg');
+  background-image: url('@/assets/wineMenu/2.jpg');
 }
 .wine-three {
-  background-image: url('@/assets/wineMenu/1.jpg');
+  background-image: url('@/assets/wineMenu/3.jpg');
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  max-width: 1010px;
+  text-align: left;
+  margin-top: 40px;
+}
+.title {
+  font-family: 'Unna', serif;
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: italic;
+}
+.menu-text {
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 /* Filter */
 .filter {
@@ -171,7 +437,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   padding: 1rem;
   max-width: 1010px;
