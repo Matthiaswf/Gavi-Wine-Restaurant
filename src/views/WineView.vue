@@ -104,7 +104,7 @@
 import { ref } from 'vue';
 export default {
   setup() {
-    const filter = ref('Dinner Course');
+    const filter = ref('French');
     return {
       filter,
     };
