@@ -10,90 +10,86 @@
           flavors and don't be afraid to try new recipes. Happy cooking!
         </p>
       </div>
+    </div>
+    <!-- Filter Nav -->
+    <nav class="filter">
+      <button
+        @click="filter = 'French'"
+        :class="{ active: filter === 'French' }"
+      >
+        French
+      </button>
+      <button
+        @click="filter = 'Italian'"
+        :class="{ active: filter === 'Italian' }"
+      >
+        Italian
+      </button>
+      <button
+        @click="filter = 'Spanish'"
+        :class="{ active: filter === 'Spanish' }"
+      >
+        Spanish
+      </button>
+      <button @click="filter = 'Other'" :class="{ active: filter === 'Other' }">
+        Other
+      </button>
+    </nav>
 
-      <!-- Filter Nav -->
-      <nav class="filter">
-        <button
-          @click="filter = 'French'"
-          :class="{ active: filter === 'French' }"
-        >
-          French
-        </button>
-        <button
-          @click="filter = 'Italian'"
-          :class="{ active: filter === 'Italian' }"
-        >
-          Italian
-        </button>
-        <button
-          @click="filter = 'Spanish'"
-          :class="{ active: filter === 'Spanish' }"
-        >
-          Spanish
-        </button>
-        <button
-          @click="filter = 'Other'"
-          :class="{ active: filter === 'Other' }"
-        >
-          Other
-        </button>
-      </nav>
-
-      <!-- Menus -->
-      <div v-if="filter === 'French'" class="menu">
-        <div class="menu-wrap">
-          <div class="menu-title">RED</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
-        </div>
-        <div class="menu-wrap">
-          <div class="menu-title">WHITE</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
+    <!-- Menus -->
+    <div v-if="filter === 'French'" class="menu">
+      <div class="menu-wrap">
+        <div class="menu-title">RED</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
         </div>
       </div>
-      <div v-if="filter === 'Italian'" class="menu">
-        <div class="menu-wrap">
-          <div class="menu-title">RED</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
-        </div>
-        <div class="menu-wrap">
-          <div class="menu-title">WHITE</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
+      <div class="menu-wrap">
+        <div class="menu-title">WHITE</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
         </div>
       </div>
-      <div v-if="filter === 'Spanish'" class="menu">
-        <div class="menu-wrap">
-          <div class="menu-title">RED</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
-        </div>
-        <div class="menu-wrap">
-          <div class="menu-title">WHITE</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
+    </div>
+    <div v-if="filter === 'Italian'" class="menu">
+      <div class="menu-wrap">
+        <div class="menu-title">RED</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
         </div>
       </div>
-      <div v-if="filter === 'Other'" class="menu">
-        <div class="menu-wrap">
-          <div class="menu-title">RED</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
+      <div class="menu-wrap">
+        <div class="menu-title">WHITE</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
         </div>
-        <div class="menu-wrap">
-          <div class="menu-title">WHITE</div>
-          <div class="dish">
-            <div class="dish-name">Example Wine</div>
-          </div>
+      </div>
+    </div>
+    <div v-if="filter === 'Spanish'" class="menu">
+      <div class="menu-wrap">
+        <div class="menu-title">RED</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
+        </div>
+      </div>
+      <div class="menu-wrap">
+        <div class="menu-title">WHITE</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
+        </div>
+      </div>
+    </div>
+    <div v-if="filter === 'Other'" class="menu">
+      <div class="menu-wrap">
+        <div class="menu-title">RED</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
+        </div>
+      </div>
+      <div class="menu-wrap">
+        <div class="menu-title">WHITE</div>
+        <div class="dish">
+          <div class="dish-name">Example Wine</div>
         </div>
       </div>
     </div>
