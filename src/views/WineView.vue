@@ -1,16 +1,11 @@
 <template>
   <div class="menu-container">
-    <div class="introduction">
-      <div class="title">Menu</div>
-      <div class="menu-text">
-        <p>
-          Making good food requires fresh ingredients, proper techniques, and a
-          passion for cooking. Always start with high-quality ingredients and
-          take your time to prepare them properly. Experiment with different
-          flavors and don't be afraid to try new recipes. Happy cooking!
-        </p>
-      </div>
+    <div class="wine-showcase">
+      <div class="wine-one wine-img"></div>
+      <div class="wine-two wine-img"></div>
+      <div class="wine-three wine-img"></div>
     </div>
+
     <!-- Filter Nav -->
     <nav class="filter">
       <button
@@ -134,7 +129,6 @@ export default {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Top */
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -143,26 +137,35 @@ export default {
   font-family: 'Unna', serif;
   width: 100%;
 }
-.introduction {
+/* Top */
+.wine-showcase {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  padding: 1rem;
-  max-width: 1010px;
-  text-align: left;
-  margin-top: 40px;
+  align-items: center;
+  width: 80%;
+  height: 50%; /* Make the showcase smaller */
+  gap: 16px;
 }
-.title {
-  font-family: 'Unna', serif;
-  font-size: 4rem;
-  font-weight: 100;
-  font-style: italic;
+.wine-img {
+  width: 30%; /* Adjust width to fit three images with gaps */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 4px;
 }
-.menu-text {
-  font-size: 1.2rem;
-  font-weight: 300;
+.wine-one {
+  background-image: url('@/assets/wineMenu/1.jpg');
 }
+.wine-two {
+  background-image: url('@/assets/wineMenu/1.jpg');
+}
+.wine-three {
+  background-image: url('@/assets/wineMenu/1.jpg');
+}
+/* Filter */
 .filter {
   display: flex;
   flex-wrap: wrap;
