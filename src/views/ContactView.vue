@@ -35,7 +35,7 @@
       <div class="map-wrap">
         <iframe
           class="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5397.602694267444!2d129.16816207708916!3d35.1692382579271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb7074c4cca7%3A0x20fffb6d50c9c70e!2sGavi%20Wine%20Restaurant!5e1!3m2!1sen!2skr!4v1735705497416!5m2!1sen!2skr"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5397.602694267444!2d129.16816207708916!3d35.1692382579271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568eb7074c4cca7%3A0x20fffb6d50c9c70e!2sGavi%20Wine%20Restaurant!5e0!3m2!1sen!2skr!4v1735705497416!5m2!1sen!2skr"
           width="600"
           height="450"
           style="border: 0"
@@ -70,7 +70,7 @@ export default {
   }
 }
 
-.reserve-container {
+.main-container {
   animation: fadeIn 1s ease-in;
 }
 @font-face {

@@ -76,7 +76,7 @@ export default {
   overflow: hidden;
 }
 .item1 {
-  background-image: url('../assets/sliderImages/slider1.jpg');
+  background-image: url('../assets/eventGallery/event1.jpg');
 }
 .item2 {
   background-image: url('../assets/sliderImages/slider2.jpg');
