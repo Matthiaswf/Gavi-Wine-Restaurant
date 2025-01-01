@@ -92,6 +92,7 @@ h2 {
   font-family: 'Unna', serif;
   font-style: italic;
   font-size: 3rem;
+  font-weight: 200;
 }
 .story-cover {
   background-image: url(../assets/story-cover.png);
