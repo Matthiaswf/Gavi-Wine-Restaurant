@@ -146,6 +146,10 @@ export default {
   margin: 0px 10px;
 }
 
+.menu-icon {
+  display: none;
+}
+
 /* Mobile */
 
 @media (max-width: 991px) {
