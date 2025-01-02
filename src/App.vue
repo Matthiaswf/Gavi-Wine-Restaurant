@@ -1,4 +1,9 @@
 <template>
+  <button :class="{ 'menu-icon': true, open: isMenuOpen }" @click="toggleMenu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
   <div class="app-container">
     <Navbar class="navbar" />
     <router-view class="router-view" />
@@ -6,9 +11,22 @@
 </template>
 <script>
 import Navbar from './components/Navbar.vue';
+import { ref } from 'vue';
 export default {
   components: {
     Navbar,
+  },
+  setup() {
+    const isMenuOpen = ref(false);
+
+    function toggleMenu() {
+      isMenuOpen.value = !isMenuOpen.value;
+    }
+    return {
+      isMenuOpen,
+      toggleMenu,
+      Navbar,
+    };
   },
 };
 </script>
@@ -37,6 +55,10 @@ export default {
   box-sizing: border-box;
 }
 
+.menu-icon {
+  display: none;
+}
+
 /* Mobile */
 
 @media (max-width: 991px) {
@@ -58,5 +80,63 @@ export default {
     height: auto;
     width: 100%;
   }
+}
+
+/* Mobile Menu Toggle */
+.menu-icon {
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 20;
+}
+
+.menu-icon:focus {
+  outline: none;
+}
+
+.menu-icon div {
+  width: 30px;
+  height: 3px;
+  background: var(--primary);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.menu-icon div:nth-child(1) {
+  transform: rotate(0);
+}
+
+.menu-icon div:nth-child(2) {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-icon div:nth-child(3) {
+  transform: rotate(0);
+}
+
+.menu-icon.open div:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.menu-icon.open div:nth-child(2) {
+  opacity: 0;
+  transform: translateX(0px);
+  transition: opacity 0.1s linear;
+}
+
+.menu-icon.open div:nth-child(3) {
+  transform: rotate(-45deg);
 }
 </style>

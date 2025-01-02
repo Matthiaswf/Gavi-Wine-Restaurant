@@ -52,82 +52,13 @@
         </div>
       </li>
     </ul>
-    <div class="mobile-links">
-      <ul class="nav-links">
-        <li>
-          <router-link to="/reserve" active-class="active-link"
-            >RESERVE</router-link
-          >
-        </li>
-        <li>
-          <router-link to="/menu" active-class="active-link">MENU</router-link>
-        </li>
-        <li>
-          <router-link to="/wine" active-class="active-link"
-            >WINE SELECTION</router-link
-          >
-        </li>
-        <li>
-          <router-link to="/story" active-class="active-link"
-            >OUR STORY</router-link
-          >
-        </li>
-
-        <li>
-          <router-link to="/events" active-class="active-link"
-            >EVENTS</router-link
-          >
-        </li>
-        <li>
-          <router-link to="/contact" active-class="active-link"
-            >CONTACT AND LOCATION</router-link
-          >
-        </li>
-        <li class="sns-links">
-          <div>
-            <a href="https://www.facebook.com/YoonkyoungSuk/" target="_blank">
-              <img
-                class="sns-icon"
-                src="@/assets/icons/facebook.png"
-                alt="Facebook"
-              />
-            </a>
-            <a href="https://www.instagram.com/gavi_wine" target="_blank">
-              <img
-                class="sns-icon"
-                src="@/assets/icons/instagram.png"
-                alt="Instagram"
-              />
-            </a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <button
-      :class="{ 'menu-icon': true, open: isMenuOpen }"
-      @click="toggleMenu"
-    >
-      <div></div>
-      <div></div>
-      <div></div>
-    </button>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue';
 export default {
   setup() {
-    const isMenuOpen = ref(false);
-
-    function toggleMenu() {
-      isMenuOpen.value = !isMenuOpen.value;
-    }
-
-    return {
-      isMenuOpen,
-      toggleMenu,
-    };
+    return {};
   },
 };
 </script>
@@ -203,7 +134,6 @@ export default {
 .mobile-links {
   display: none;
 }
-
 /* Mobile */
 
 @media (max-width: 991px) {
@@ -229,62 +159,6 @@ export default {
   }
   .nav-links {
     display: none;
-  }
-
-  /* Mobile Menu Toggle */
-  .menu-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    margin-right: 15px;
-    z-index: 10;
-  }
-
-  .menu-icon:focus {
-    outline: none;
-  }
-
-  .menu-icon div {
-    width: 30px;
-    height: 3px;
-    background: var(--primary);
-    border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-  }
-
-  .menu-icon div:nth-child(1) {
-    transform: rotate(0);
-  }
-
-  .menu-icon div:nth-child(2) {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  .menu-icon div:nth-child(3) {
-    transform: rotate(0);
-  }
-
-  .menu-icon.open div:nth-child(1) {
-    transform: rotate(45deg);
-  }
-
-  .menu-icon.open div:nth-child(2) {
-    opacity: 0;
-    transform: translateX(0px);
-    transition: opacity 0.1s linear;
-  }
-
-  .menu-icon.open div:nth-child(3) {
-    transform: rotate(-45deg);
   }
 }
 </style>
