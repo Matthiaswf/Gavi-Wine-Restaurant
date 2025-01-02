@@ -127,4 +127,30 @@ export default {
   height: 20px;
   margin: 0px 10px;
 }
+
+/* Mobile */
+
+@media (max-width: 991px) {
+  .container {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+    height: 100px;
+    min-height: 0;
+  }
+  .logo-container {
+    height: 100%;
+    justify-content: flex-start;
+    border-bottom: none;
+    text-align: left;
+  }
+  .logo {
+    height: 100%;
+    font-size: 3rem;
+    padding: 0;
+  }
+  .nav-links {
+    display: none;
+  }
+}
 </style>

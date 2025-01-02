@@ -18,6 +18,7 @@
     <!-- Add more slides as needed -->
     <div class="swiper-logo">Gavi</div>
   </Swiper>
+  <div class="mobile-home">Hello</div>
 </template>
 
 <script>
@@ -106,5 +107,24 @@ export default {
   color: white;
   text-align: center;
   z-index: 1;
+}
+.mobile-home {
+  display: none;
+}
+/* Mobile */
+@media (max-width: 991px) {
+  .swiper {
+    display: none;
+  }
+
+  .mobile-home {
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
 }
 </style>

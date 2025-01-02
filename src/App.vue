@@ -36,4 +36,27 @@ export default {
   width: 100%;
   box-sizing: border-box;
 }
+
+/* Mobile */
+
+@media (max-width: 991px) {
+  .app-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+
+  .navbar {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: auto;
+  }
+
+  .router-view {
+    height: auto;
+    width: 100%;
+  }
+}
 </style>
