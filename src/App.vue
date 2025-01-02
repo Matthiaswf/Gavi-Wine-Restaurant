@@ -4,6 +4,11 @@
     <div></div>
     <div></div>
   </button>
+
+  <transition name="slide-down">
+    <MobileLinks class="mobile-links" v-if="isMenuOpen" />
+  </transition>
+
   <div class="app-container">
     <Navbar class="navbar" />
     <router-view class="router-view" />
@@ -11,10 +16,12 @@
 </template>
 <script>
 import Navbar from './components/Navbar.vue';
+import MobileLinks from './components/MobileLinks.vue';
 import { ref } from 'vue';
 export default {
   components: {
     Navbar,
+    MobileLinks,
   },
   setup() {
     const isMenuOpen = ref(false);
@@ -26,6 +33,7 @@ export default {
       isMenuOpen,
       toggleMenu,
       Navbar,
+      MobileLinks,
     };
   },
 };
@@ -80,6 +88,52 @@ export default {
     height: auto;
     width: 100%;
   }
+
+  /* Mobile Links */
+  /* Sliding Animation for MobileLinks */
+  .slide-down-enter-active,
+  .slide-down-leave-active {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .slide-down-enter-from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .slide-down-enter-to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .slide-down-leave-from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .slide-down-leave-to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .mobile-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 20;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-links-enter-active {
+    top: 0;
+  }
+
+  .mobile-links-leave-active {
+    top: -100%;
+  }
+
   /* Mobile Menu Toggle */
   .menu-icon {
     position: fixed;
@@ -94,7 +148,7 @@ export default {
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 20;
+    z-index: 25;
   }
 
   .menu-icon:focus {
