@@ -90,6 +90,17 @@ export default {
   }
 
   /* Mobile Links */
+  .mobile-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    z-index: 20;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
   /* Sliding Animation for MobileLinks */
   .slide-down-enter-active,
   .slide-down-leave-active {
@@ -114,16 +125,6 @@ export default {
   .slide-down-leave-to {
     transform: translateY(-100%);
     opacity: 0;
-  }
-
-  .mobile-links {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 20;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
   .mobile-links-enter-active {
