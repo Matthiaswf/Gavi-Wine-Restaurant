@@ -6,7 +6,11 @@
   </button>
 
   <transition name="slide-down">
-    <MobileLinks class="mobile-links" v-if="isMenuOpen" />
+    <MobileLinks
+      class="mobile-links"
+      v-if="isMenuOpen"
+      @close-menu="toggleMenu"
+    />
   </transition>
 
   <div class="app-container">

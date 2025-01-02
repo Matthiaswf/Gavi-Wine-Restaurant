@@ -1,31 +1,31 @@
 <template>
   <div class="mobile-links">
     <ul class="nav-links">
-      <li>
+      <li @click="handleClick">
         <router-link to="/reserve" active-class="active-link"
           >RESERVE</router-link
         >
       </li>
-      <li>
+      <li @click="handleClick">
         <router-link to="/menu" active-class="active-link">MENU</router-link>
       </li>
-      <li>
+      <li @click="handleClick">
         <router-link to="/wine" active-class="active-link"
           >WINE SELECTION</router-link
         >
       </li>
-      <li>
+      <li @click="handleClick">
         <router-link to="/story" active-class="active-link"
           >OUR STORY</router-link
         >
       </li>
 
-      <li>
+      <li @click="handleClick">
         <router-link to="/events" active-class="active-link"
           >EVENTS</router-link
         >
       </li>
-      <li>
+      <li @click="handleClick">
         <router-link to="/contact" active-class="active-link"
           >CONTACT AND LOCATION</router-link
         >
@@ -53,7 +53,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'MobileLinks',
+  methods: {
+    handleClick() {
+      // Emit an event to notify the parent
+      this.$emit('close-menu');
+    },
+  },
+};
 </script>
 
 <style scoped>
