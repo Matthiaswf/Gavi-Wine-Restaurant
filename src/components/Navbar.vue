@@ -52,6 +52,57 @@
         </div>
       </li>
     </ul>
+    <div class="mobile-links">
+      <ul class="nav-links">
+        <li>
+          <router-link to="/reserve" active-class="active-link"
+            >RESERVE</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/menu" active-class="active-link">MENU</router-link>
+        </li>
+        <li>
+          <router-link to="/wine" active-class="active-link"
+            >WINE SELECTION</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/story" active-class="active-link"
+            >OUR STORY</router-link
+          >
+        </li>
+
+        <li>
+          <router-link to="/events" active-class="active-link"
+            >EVENTS</router-link
+          >
+        </li>
+        <li>
+          <router-link to="/contact" active-class="active-link"
+            >CONTACT AND LOCATION</router-link
+          >
+        </li>
+        <li class="sns-links">
+          <div>
+            <a href="https://www.facebook.com/YoonkyoungSuk/" target="_blank">
+              <img
+                class="sns-icon"
+                src="@/assets/icons/facebook.png"
+                alt="Facebook"
+              />
+            </a>
+            <a href="https://www.instagram.com/gavi_wine" target="_blank">
+              <img
+                class="sns-icon"
+                src="@/assets/icons/instagram.png"
+                alt="Instagram"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
     <button
       :class="{ 'menu-icon': true, open: isMenuOpen }"
       @click="toggleMenu"
@@ -147,6 +198,9 @@ export default {
 }
 
 .menu-icon {
+  display: none;
+}
+.mobile-links {
   display: none;
 }
 
