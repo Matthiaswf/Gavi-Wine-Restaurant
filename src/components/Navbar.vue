@@ -151,7 +151,7 @@ export default {
 @media (max-width: 991px) {
   .container {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: 100px;
     min-height: 0;
   }
@@ -184,6 +184,7 @@ export default {
     border: none;
     cursor: pointer;
     padding: 0;
+    margin-right: 15px;
     z-index: 10;
   }
 
@@ -194,7 +195,7 @@ export default {
   .menu-icon div {
     width: 30px;
     height: 3px;
-    background: black;
+    background: var(--primary);
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
