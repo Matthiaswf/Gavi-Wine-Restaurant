@@ -18,7 +18,7 @@
     <!-- Add more slides as needed -->
     <div class="swiper-logo">Gavi</div>
   </Swiper>
-  <div class="mobile-home">Hello</div>
+  <div class="mobile-container">Hello</div>
 </template>
 
 <script>
@@ -108,7 +108,7 @@ export default {
   text-align: center;
   z-index: 1;
 }
-.mobile-home {
+.mobile-container {
   display: none;
 }
 /* Mobile */
@@ -117,7 +117,7 @@ export default {
     display: none;
   }
 
-  .mobile-home {
+  .mobile-container {
     display: block;
     height: 100%;
     width: 100%;
