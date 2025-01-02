@@ -52,13 +52,31 @@
         </div>
       </li>
     </ul>
+    <button
+      :class="{ 'menu-icon': true, open: isMenuOpen }"
+      @click="toggleMenu"
+    >
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue';
 export default {
   setup() {
-    return {};
+    const isMenuOpen = ref(false);
+
+    function toggleMenu() {
+      isMenuOpen.value = !isMenuOpen.value;
+    }
+
+    return {
+      isMenuOpen,
+      toggleMenu,
+    };
   },
 };
 </script>
@@ -134,23 +152,80 @@ export default {
   .container {
     flex-direction: row;
     justify-content: flex-start;
-    padding: 0;
     height: 100px;
     min-height: 0;
   }
   .logo-container {
     height: 100%;
-    justify-content: flex-start;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
     border-bottom: none;
-    text-align: left;
+    text-align: center;
+    padding: 0px 15px;
   }
   .logo {
     height: 100%;
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 0;
   }
   .nav-links {
     display: none;
+  }
+
+  /* Mobile Menu Toggle */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+  }
+
+  .menu-icon:focus {
+    outline: none;
+  }
+
+  .menu-icon div {
+    width: 30px;
+    height: 3px;
+    background: black;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  .menu-icon div:nth-child(1) {
+    transform: rotate(0);
+  }
+
+  .menu-icon div:nth-child(2) {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .menu-icon div:nth-child(3) {
+    transform: rotate(0);
+  }
+
+  .menu-icon.open div:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .menu-icon.open div:nth-child(2) {
+    opacity: 0;
+    transform: translateX(0px);
+    transition: opacity 0.1s linear;
+  }
+
+  .menu-icon.open div:nth-child(3) {
+    transform: rotate(-45deg);
   }
 }
 </style>
