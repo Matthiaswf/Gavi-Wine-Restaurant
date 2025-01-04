@@ -1,6 +1,6 @@
 <template>
   <div class="menu-container">
-    <div class="mobile-banner"></div>
+    <MenuGallery class="mobile-banner"></MenuGallery>
     <div class="introduction">
       <div class="title">Menu</div>
       <div class="menu-text">
@@ -320,11 +320,16 @@
 
 <script>
 import { ref } from 'vue';
+import MenuGallery from '@/components/MenuGallery.vue';
 export default {
+  components: {
+    MenuGallery,
+  },
   setup() {
     const filter = ref('Dinner Course');
     return {
       filter,
+      MenuGallery,
     };
   },
 };
