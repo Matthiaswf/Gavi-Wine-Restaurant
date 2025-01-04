@@ -69,6 +69,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .gallery {
   width: 100%;
@@ -109,7 +110,7 @@ export default {
 /* Mobile Section */
 @media (max-width: 991px) {
   .gallery-title {
-    top: 55%;
+    top: 80%;
     font-size: 4rem;
   }
   .title {

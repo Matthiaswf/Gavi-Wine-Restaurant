@@ -1,24 +1,17 @@
 <template>
-  <Swiper
-    :modules="modules"
-    :slides-per-view="1"
-    :space-between="50"
-    @swiper="onSwiper"
-    @slideChange="onSlideChange"
-    class="swiper"
-    :allow-touch-move="false"
-    :autoplay="{ delay: 2000, disableOnInteraction: false }"
-    :effect="'fade'"
-    :speed="2000"
-  >
-    <SwiperSlide><div class="swiper-item item1"></div></SwiperSlide>
-    <SwiperSlide><div class="swiper-item item2"></div></SwiperSlide>
-    <SwiperSlide><div class="swiper-item item3"></div></SwiperSlide>
-    <SwiperSlide><div class="swiper-item item4"></div></SwiperSlide>
-    <!-- Add more slides as needed -->
-    <div class="swiper-logo">Gavi</div>
-  </Swiper>
+  <div class="home-container">
+    <div class="banner">
+      <Gallery class="gallery" />
+      <div class="gallery-title">Gavi</div>
+    </div>
+  </div>
+
   <div class="mobile-container">
+    <div class="banner">
+      <Gallery class="mobile-gallery" />
+      <div class="mobile-gallery-title">Gavi</div>
+    </div>
+
     <!-- <img class="mobile-img one" src="@/assets/MobileImages/home/1.jpg" alt="" /> -->
     <h2>Great food, wonderful wine, and an elegant family atmosphere.</h2>
     <img class="mobile-img" src="@/assets/MobileImages/home/10.jpg" alt="" />
@@ -48,111 +41,64 @@
 </template>
 
 <script>
-// import Swiper core and required modules
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-  EffectFade,
-} from 'swiper/modules';
-
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from 'swiper/vue';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/effect-fade';
+import Gallery from '@/components/Gallery.vue';
 
 export default {
   components: {
-    Swiper,
-    SwiperSlide,
+    Gallery,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log('slide change');
-    };
-    return {
-      onSwiper,
-      onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectFade],
-    };
+    return { Gallery };
   },
 };
 </script>
 
 <style scoped>
-.swiper {
+.home-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box; /* Include padding and border in the width and height */
+  padding: 1rem;
+  padding-right: 15px; /* Reduced padding-right */
+  flex: 1;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+.banner {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
-  box-sizing: border-box;
+  position: relative;
 }
-.swiper-item {
+.gallery {
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  z-index: -1;
+}
+.gallery-title {
   z-index: 0;
-  overflow: hidden;
-}
-.item1 {
-  background-image: url('../assets/sliderImages/slider1.jpg');
-}
-.item2 {
-  background-image: url('../assets/sliderImages/slider2.jpg');
-}
-.item3 {
-  background-image: url('../assets/sliderImages/slider3.jpg');
-}
-.item4 {
-  background-image: url('../assets/sliderImages/slider4.jpg');
-}
-@font-face {
-  font-family: 'CustomFont';
-  src: url('@/assets/fonts/Hamline.ttf') format('truetype'),
-    url('@/assets/fonts/Hamline.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-.swiper-logo {
-  font-family: 'CustomFont';
   position: absolute;
-  top: 80%;
-  font-size: 8rem;
+  top: 88%;
+  font-size: 6rem;
+  font-family: 'CustomFont', sans-serif;
   color: white;
   text-align: center;
-  z-index: 1;
 }
+
 .mobile-container {
   display: none;
 }
 /* Mobile */
 @media (max-width: 991px) {
-  .swiper {
-    min-height: 500px;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+  .home-container {
+    display: none;
   }
-
-  .swiper-logo {
-    top: 80%;
-    font-size: 4rem;
-  }
-
   .mobile-container {
     display: flex;
     flex-direction: column;
@@ -161,6 +107,26 @@ export default {
     gap: 15px; /* Space between images */
     width: calc(100% - 30px); /* Ensure space on both sides */
     margin: 0px 15px 15px; /* Margin around container */
+
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+  }
+  .mobile-gallery {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .mobile-gallery-title {
+    z-index: 1;
+    position: absolute;
+    top: 80%;
+    font-size: 4rem;
+    font-family: 'CustomFont', sans-serif;
+    color: white;
+    text-align: center;
   }
   .mobile-img {
     width: 100%;

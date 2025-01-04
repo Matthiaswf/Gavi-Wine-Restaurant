@@ -78,6 +78,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overflow-x: hidden;
     overflow-y: auto;
     height: 100vh;
   }
