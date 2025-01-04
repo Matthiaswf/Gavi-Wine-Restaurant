@@ -5,7 +5,7 @@
       <div class="gallery-title">Gavi</div>
     </div>
     <div class="text-wrap">
-      <div class="title">Events</div>
+      <div class="title">Events & Specials</div>
       <div class="text">Currently None Scheduled</div>
     </div>
   </div>
@@ -97,5 +97,19 @@ export default {
   width: 100%;
   max-width: 1010px;
   line-height: 2;
+}
+
+/* Mobile Section */
+@media (max-width: 991px) {
+  .gallery-title {
+    top: 55%;
+    font-size: 4rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
 }
 </style>

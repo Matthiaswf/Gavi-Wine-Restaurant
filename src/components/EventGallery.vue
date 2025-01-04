@@ -79,12 +79,28 @@ export default {
   background-image: url('../assets/eventGallery/event1.jpg');
 }
 .item2 {
-  background-image: url('../assets/eventGallery/event2.jpg');
+  background-image: url('../assets/sliderImages/slider1.jpg');
 }
 .item3 {
-  background-image: url('../assets/sliderImages/slider3.jpg');
+  background-image: url('../assets/sliderImages/slider2.jpg');
 }
 .item4 {
-  background-image: url('../assets/sliderImages/slider4.jpg');
+  background-image: url('../assets/sliderImages/slider3.jpg');
+}
+
+/* Mobile Section */
+@media (max-width: 991px) {
+  .item1 {
+    background-image: url('../assets/eventGallery/event3.jpg');
+  }
+  .item2 {
+    background-image: url('../assets/eventGallery/event1.jpg');
+  }
+  .item3 {
+    background-image: url('../assets/eventGallery/event4.jpg');
+  }
+  .item4 {
+    background-image: url('../assets/eventGallery/event2.jpg');
+  }
 }
 </style>

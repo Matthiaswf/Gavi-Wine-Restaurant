@@ -22,7 +22,7 @@
 
       <li @click="handleClick">
         <router-link to="/events" active-class="active-link"
-          >EVENTS</router-link
+          >EVENTS AND SPECIALS</router-link
         >
       </li>
       <li @click="handleClick">
