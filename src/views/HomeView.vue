@@ -70,6 +70,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
 }
 .swiper-item {
   width: 100%;
