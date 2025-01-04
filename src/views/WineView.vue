@@ -529,6 +529,7 @@ button.active {
 
   .filter {
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .menu {
@@ -540,6 +541,7 @@ button.active {
     gap: 20px;
     min-width: 0;
     width: 100%;
+    margin-top: 10px;
   }
 
   .menu-wrap {
@@ -547,6 +549,14 @@ button.active {
     height: auto;
     box-sizing: border-box;
     margin-top: 40px;
+  }
+  button {
+    height: 50px; /* Reduce height */
+    width: 150px; /* Reduce width */
+    font-size: 0.75rem; /* Slightly smaller font */
+    padding: 0.6rem 1rem; /* Increase horizontal padding */
+    margin-left: 0.8em;
+    margin-right: 0.8em;
   }
 }
 </style>

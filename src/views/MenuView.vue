@@ -412,6 +412,7 @@ button {
   margin-right: 1em;
   margin-top: 1em;
   cursor: pointer;
+  box-sizing: border-box; /* Ensure padding and borders are included in the width/height */
 }
 button.active {
   border: 1px solid grey;
@@ -494,6 +495,15 @@ button.active {
     height: auto;
     box-sizing: border-box;
     margin-top: 40px;
+  }
+
+  button {
+    height: 50px; /* Reduce height */
+    width: 150px; /* Reduce width */
+    font-size: 0.75rem; /* Slightly smaller font */
+    padding: 0.6rem 1rem; /* Increase horizontal padding */
+    margin-left: 0.8em;
+    margin-right: 0.8em;
   }
 }
 </style>
