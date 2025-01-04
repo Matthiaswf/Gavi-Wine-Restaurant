@@ -18,7 +18,11 @@
     <!-- Add more slides as needed -->
     <div class="swiper-logo">Gavi</div>
   </Swiper>
-  <div class="mobile-container">Hello</div>
+  <div class="mobile-container">
+    <img class="mobile-img" src="@/assets/MobileImages/home/1.jpg" alt="" />
+    <img class="mobile-img" src="@/assets/MobileImages/home/2.jpg" alt="" />
+    <img class="mobile-img" src="@/assets/MobileImages/home/3.jpg" alt="" />
+  </div>
 </template>
 
 <script>
@@ -120,13 +124,18 @@ export default {
   }
 
   .mobile-container {
-    display: block;
-    height: 100%;
-    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-size: 2rem;
+    justify-content: flex-start;
+    gap: 15px; /* Space between images */
+    width: calc(100% - 30px); /* Ensure space on both sides */
+    margin: 80px 15px 15px; /* Margin around container */
+  }
+  .mobile-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
   }
 }
 </style>
