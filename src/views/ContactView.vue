@@ -22,7 +22,7 @@
           </div>
           <div class="contact">
             <h5>Contact</h5>
-            Call (051)808-1655.<br />
+            Call <a href="tel:+82518081655">(051)808-1655</a><br />
             Ko2018sk@gmail.com<br />
           </div>
           <div class="parking">
@@ -97,6 +97,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .gallery {
   width: 100%;
@@ -106,7 +107,7 @@ export default {
 .gallery-title {
   z-index: 0;
   position: absolute;
-  top: 37%;
+  top: 75%;
   font-size: 6rem;
   font-family: 'CustomFont', sans-serif;
   color: white;
@@ -178,5 +179,65 @@ h5 {
   border-bottom: 1px solid black;
   padding: 10px 0;
   width: 75%;
+}
+
+/* Mobile Section */
+@media (max-width: 991px) {
+  .gallery-title {
+    top: 78%;
+    font-size: 4rem;
+  }
+
+  .info-container {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .banner {
+    min-height: 500px;
+    padding-bottom: 20px;
+  }
+
+  .text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .title {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+  }
+  .map-wrap {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .address {
+    width: 100%;
+  }
+  .hours {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
 }
 </style>
