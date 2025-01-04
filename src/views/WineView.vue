@@ -1,6 +1,7 @@
 <template>
   <div class="menu-container">
     <div class="wine-showcase">
+      <WineGallery class="wine-gallery" />
       <div class="wine-one wine-img"></div>
       <div class="wine-two wine-img"></div>
       <div class="wine-three wine-img"></div>
@@ -337,11 +338,17 @@
 </template>
 
 <script>
+import WineGallery from '@/components/WineGallery.vue';
 import { ref } from 'vue';
+
 export default {
+  components: {
+    WineGallery,
+  },
   setup() {
     const filter = ref('French');
     return {
+      WineGallery,
       filter,
     };
   },
@@ -381,6 +388,10 @@ export default {
   justify-content: flex-start;
   font-family: 'Unna', serif;
   width: 100%;
+}
+
+.wine-gallery {
+  display: none;
 }
 /* Top */
 .wine-showcase {
@@ -508,5 +519,17 @@ button.active {
   font-weight: 400;
   text-align: left;
   padding-bottom: 15px;
+}
+
+/* Mobile Section */
+@media (max-width: 991px) {
+  .wine-showcase .wine-img {
+    display: none;
+  }
+  .wine-gallery {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
