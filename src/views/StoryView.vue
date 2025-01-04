@@ -108,4 +108,22 @@ h2 {
   max-width: 950px;
   font-size: 1.1rem;
 }
+
+/* Mobile Section */
+@media (max-width: 991px) {
+  .story-container {
+    margin-bottom: 15px;
+  }
+
+  .story-cover {
+    min-height: 500px;
+    background-image: url(../assets/story-mobile2.jpg);
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .story-text {
+    font-size: 1rem;
+  }
+}
 </style>

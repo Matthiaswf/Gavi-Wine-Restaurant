@@ -79,7 +79,7 @@ export default {
   background-image: url('../assets/eventGallery/event1.jpg');
 }
 .item2 {
-  background-image: url('../assets/sliderImages/slider2.jpg');
+  background-image: url('../assets/eventGallery/event2.jpg');
 }
 .item3 {
   background-image: url('../assets/sliderImages/slider3.jpg');
