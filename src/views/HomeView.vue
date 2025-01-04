@@ -19,7 +19,7 @@
     <div class="swiper-logo">Gavi</div>
   </Swiper>
   <div class="mobile-container">
-    <img class="mobile-img one" src="@/assets/MobileImages/home/1.jpg" alt="" />
+    <!-- <img class="mobile-img one" src="@/assets/MobileImages/home/1.jpg" alt="" /> -->
     <h2>Great food, wonderful wine, and an elegant family atmosphere.</h2>
     <img class="mobile-img" src="@/assets/MobileImages/home/10.jpg" alt="" />
     <img class="mobile-img" src="@/assets/MobileImages/home/2.jpg" alt="" />
@@ -142,7 +142,15 @@ export default {
 /* Mobile */
 @media (max-width: 991px) {
   .swiper {
-    display: none;
+    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .swiper-logo {
+    top: 80%;
+    font-size: 4rem;
   }
 
   .mobile-container {
