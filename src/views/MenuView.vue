@@ -1,14 +1,10 @@
 <template>
   <div class="menu-container">
+    <div class="mobile-banner"></div>
     <div class="introduction">
       <div class="title">Menu</div>
       <div class="menu-text">
-        <p>
-          Making good food requires fresh ingredients, proper techniques, and a
-          passion for cooking. Always start with high-quality ingredients and
-          take your time to prepare them properly. Experiment with different
-          flavors and don't be afraid to try new recipes. Happy cooking!
-        </p>
+        <p></p>
       </div>
     </div>
     <!-- Filter Nav -->
@@ -465,5 +461,25 @@ button.active {
   font-weight: 400;
   text-align: left;
   padding-bottom: 15px;
+}
+
+.mobile-banner {
+  display: none;
+}
+/* Mobile Section */
+@media (max-width: 991px) {
+  .mobile-banner {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    background-image: url('@/assets/MobileImages/home/9.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .filter {
+    margin-top: 10px;
+  }
 }
 </style>
