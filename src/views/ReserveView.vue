@@ -109,8 +109,11 @@ export default {
 }
 /* Mobile Section */
 @media (max-width: 991px) {
+  .banner {
+    height: 400px;
+  }
   .gallery {
-    height: 500px;
+    height: 400px;
   }
   .gallery-title {
     top: 80%;
