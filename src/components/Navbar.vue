@@ -22,7 +22,11 @@
           >OUR STORY</router-link
         >
       </li>
-
+      <li>
+        <router-link to="/photos" active-class="active-link"
+          >PHOTOS</router-link
+        >
+      </li>
       <li>
         <router-link to="/events" active-class="active-link"
           >EVENTS AND SPECIALS</router-link

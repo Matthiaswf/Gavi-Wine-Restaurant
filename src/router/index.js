@@ -6,6 +6,7 @@ import WineView from '@/views/WineView.vue';
 import StoryView from '@/views/StoryView.vue';
 import EventsView from '@/views/EventsView.vue';
 import ContactView from '@/views/ContactView.vue';
+import PhotosView from '@/views/PhotosView.vue';
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: '/contact',
     name: 'contact',
     component: ContactView,
+  },
+  {
+    path: '/photos',
+    name: 'photos',
+    component: PhotosView,
   },
 ];
 

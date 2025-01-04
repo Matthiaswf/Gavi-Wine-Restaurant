@@ -19,6 +19,11 @@
           >OUR STORY</router-link
         >
       </li>
+      <li @click="handleClick">
+        <router-link to="/photos" active-class="active-link"
+          >PHOTOS</router-link
+        >
+      </li>
 
       <li @click="handleClick">
         <router-link to="/events" active-class="active-link"
