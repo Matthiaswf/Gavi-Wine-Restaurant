@@ -17,6 +17,11 @@ body {
   color: var(--text);
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+}
 a {
   color: var(--primary);
   text-decoration: none;

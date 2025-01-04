@@ -79,17 +79,20 @@ export default {
     align-items: center;
     justify-content: flex-start;
     overflow-y: auto;
+    height: 100vh;
   }
 
   .navbar {
-    height: 100px;
+    min-height: 80px;
     width: 100%;
-    position: relative;
-    top: auto;
+    background-color: white;
+    position: sticky;
+    top: 0; /* Sticky behavior */
+    z-index: 20;
   }
 
   .router-view {
-    height: auto;
+    height: 100%;
     width: 100%;
   }
 
@@ -101,7 +104,7 @@ export default {
     height: 100vh;
     width: 100%;
     background-color: white;
-    z-index: 20;
+    z-index: 30;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
 
@@ -153,7 +156,7 @@ export default {
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 25;
+    z-index: 35;
   }
 
   .menu-icon:focus {

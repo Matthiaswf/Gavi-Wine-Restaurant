@@ -20,6 +20,9 @@
   </Swiper>
   <div class="mobile-container">
     <img class="mobile-img" src="@/assets/MobileImages/home/1.jpg" alt="" />
+    <h2>Great food, wonderful wine, and an elegant family atmosphere.</h2>
+    <img class="mobile-img" src="@/assets/MobileImages/home/10.jpg" alt="" />
+
     <img class="mobile-img" src="@/assets/MobileImages/home/2.jpg" alt="" />
     <img class="mobile-img" src="@/assets/MobileImages/home/3.jpg" alt="" />
   </div>
@@ -130,12 +133,20 @@ export default {
     justify-content: flex-start;
     gap: 15px; /* Space between images */
     width: calc(100% - 30px); /* Ensure space on both sides */
-    margin: 80px 15px 15px; /* Margin around container */
+    margin: 0px 15px 15px; /* Margin around container */
   }
   .mobile-img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+  }
+  h2 {
+    font-family: 'Unna', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    color: #333;
   }
 }
 </style>

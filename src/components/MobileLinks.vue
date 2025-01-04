@@ -73,7 +73,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 20;
+  z-index: 30;
 }
 .nav-links {
   height: 100%;
