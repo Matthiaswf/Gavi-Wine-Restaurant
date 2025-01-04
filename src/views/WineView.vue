@@ -388,6 +388,7 @@ export default {
   justify-content: flex-start;
   font-family: 'Unna', serif;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .wine-gallery {

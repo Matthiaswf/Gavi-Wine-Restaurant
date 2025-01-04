@@ -120,10 +120,10 @@ h2 {
     background-image: url(../assets/story-mobile2.jpg);
   }
   h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .story-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 </style>

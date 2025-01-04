@@ -109,6 +109,9 @@ export default {
 }
 /* Mobile Section */
 @media (max-width: 991px) {
+  .gallery {
+    height: 500px;
+  }
   .gallery-title {
     top: 80%;
     font-size: 4rem;

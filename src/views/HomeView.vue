@@ -22,7 +22,7 @@
         >Browse our menu, offering a selection of dishes thoughtfully prepared
         for a refined dining experience.</span
       >
-      <button>
+      <button @click="handleClick('/menu')">
         <router-link to="/menu" active-class="active-link">MENU</router-link>
       </button>
     </div>
@@ -31,7 +31,7 @@
       <h3>Reservations</h3>
       <span>Walk-ins are always welcome.</span>
       <span>Call <a href="tel:+0518081655">(051)808-1655</a></span>
-      <button>
+      <button @click="handleClick('/reserve')">
         <router-link to="/reserve" active-class="active-link"
           >Reserve</router-link
         >
@@ -42,13 +42,19 @@
 
 <script>
 import Gallery from '@/components/Gallery.vue';
-
+import { useRouter } from 'vue-router';
 export default {
   components: {
     Gallery,
   },
   setup() {
-    return { Gallery };
+    const router = useRouter();
+
+    const handleClick = (path) => {
+      router.push(path);
+    };
+
+    return { Gallery, handleClick };
   },
 };
 </script>
@@ -96,18 +102,31 @@ export default {
 }
 /* Mobile */
 @media (max-width: 991px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
   .home-container {
     display: none;
+  }
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove any default margin that might cause overflow */
   }
   .mobile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    overscroll-behavior: none;
     gap: 15px; /* Space between images */
     width: calc(100% - 30px); /* Ensure space on both sides */
     margin: 0px 15px 15px; /* Margin around container */
 
+    overscroll-behavior: none; /* Disable overscroll */
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
   }
   .mobile-gallery {
