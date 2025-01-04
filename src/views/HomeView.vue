@@ -19,12 +19,31 @@
     <div class="swiper-logo">Gavi</div>
   </Swiper>
   <div class="mobile-container">
-    <img class="mobile-img" src="@/assets/MobileImages/home/1.jpg" alt="" />
+    <img class="mobile-img one" src="@/assets/MobileImages/home/1.jpg" alt="" />
     <h2>Great food, wonderful wine, and an elegant family atmosphere.</h2>
     <img class="mobile-img" src="@/assets/MobileImages/home/10.jpg" alt="" />
-
     <img class="mobile-img" src="@/assets/MobileImages/home/2.jpg" alt="" />
-    <img class="mobile-img" src="@/assets/MobileImages/home/3.jpg" alt="" />
+    <div class="link-section">
+      <h3>Menu</h3>
+      <span
+        >Browse our menu, offering a selection of dishes thoughtfully prepared
+        for a refined dining experience.</span
+      >
+      <button>
+        <router-link to="/menu" active-class="active-link">MENU</router-link>
+      </button>
+    </div>
+    <img class="mobile-img" src="@/assets/MobileImages/home/9.jpg" alt="" />
+    <div class="link-section">
+      <h3>Reservations</h3>
+      <span>Walk-ins are always welcome.</span>
+      <span>Call <a href="tel:+0518081655">(051)808-1655</a></span>
+      <button>
+        <router-link to="/reserve" active-class="active-link"
+          >Reserve</router-link
+        >
+      </button>
+    </div>
   </div>
 </template>
 
@@ -140,6 +159,31 @@ export default {
     height: 300px;
     object-fit: cover;
   }
+  .mobile-img.one {
+    height: 400px;
+  }
+  .link-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  button {
+    height: 50px;
+    width: 190px;
+    padding: 1rem 1rem 0.8rem;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-right: 2em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+    cursor: pointer;
+  }
   h2 {
     font-family: 'Unna', serif;
     font-size: 2rem;
@@ -147,6 +191,15 @@ export default {
     font-weight: 200;
     text-align: center;
     color: #333;
+  }
+  h3 {
+    font-family: 'Unna', serif;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    text-align: left;
+    color: #333;
+    margin-bottom: 10px;
   }
 }
 </style>

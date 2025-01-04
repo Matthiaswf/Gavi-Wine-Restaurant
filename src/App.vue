@@ -84,6 +84,8 @@ export default {
 
   .navbar {
     min-height: 80px;
+    height: 80px;
+    max-height: 80px;
     width: 100%;
     background-color: white;
     position: sticky;
