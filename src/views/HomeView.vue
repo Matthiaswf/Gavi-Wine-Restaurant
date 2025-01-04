@@ -199,6 +199,8 @@ export default {
     font-weight: 200;
     text-align: center;
     color: #333;
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   h3 {
     font-family: 'Unna', serif;
