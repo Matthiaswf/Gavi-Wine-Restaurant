@@ -16,6 +16,12 @@
         Dinner Course
       </button>
       <button
+        @click="filter = 'Seasonal'"
+        :class="{ active: filter === 'Seasonal' }"
+      >
+        Seasonal Menu
+      </button>
+      <button
         @click="filter = 'Starters and Sides'"
         :class="{ active: filter === 'Starters and Sides' }"
       >
@@ -59,7 +65,7 @@
             Jamon Serrano, Chevre Goat Cheese & Seasonal Fruit
           </div>
         </div>
-        <div class="menu-title">Soup</div>
+        <div class="menu-title course">Soup</div>
         <div class="dish">
           <div class="dish-name">
             Tomato Stew With Scallops, Sea Shell, Black Tiger Shrimp & Tilapia
@@ -71,9 +77,25 @@
             French Cream Style Escargot& Roasted Garlic
           </div>
         </div>
-        <div class="menu-title">MAIN COURSE</div>
+        <div class="menu-title course">MAIN COURSE</div>
         <div class="dish">
           <div class="dish-name">Korean Strip Loin Steak 1+ Grade (180g)</div>
+        </div>
+        <div class="menu-title course">Desert</div>
+        <div class="dish">
+          <div class="dish-name">Vanilla Ice cream or Crème Brûlée</div>
+          <div class="dish-name">Coffee or Herbal Tea</div>
+        </div>
+      </div>
+    </div>
+    <div v-if="filter === 'Seasonal'" class="menu">
+      <div class="menu-wrap">
+        <div class="menu-title">Seasonal Menu</div>
+        <div class="dish">
+          <div class="dish-name">
+            Oven Roasted Oysters in the Shell with Dill Beurre Blanc Sauce (8~9
+            pcs.)
+          </div>
         </div>
       </div>
     </div>
@@ -86,7 +108,7 @@
           </div>
         </div>
         <div class="dish">
-          <div class="dish-name">Deep-fried Seaweed</div>
+          <div class="dish-name">Nuts & Deep-fried Vegetable</div>
         </div>
         <div class="dish">
           <div class="dish-name">
@@ -99,8 +121,16 @@
           </div>
         </div>
         <div class="dish">
+          <div class="dish-name">
+            Cheese French Fries (with Truffle Aioli Dipping Sauce)
+          </div>
+        </div>
+        <div class="dish">
           <div class="dish-name">Spanish Style Garlic Shrimp Tapas</div>
         </div>
+      </div>
+      <div class="dish">
+        <div class="dish-name">Assorted Olives</div>
       </div>
       <div class="menu-wrap">
         <div class="menu-title">CHEESE & CHARCUTERIE</div>
@@ -125,6 +155,11 @@
         </div>
         <div class="dish">
           <div class="dish-name">8 Assorted Cheeses & Fruits Platter</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">
+            Charcuterie Platter (Jamon Serrano & Salami)
+          </div>
         </div>
       </div>
     </div>
@@ -162,12 +197,21 @@
           </div>
         </div>
       </div>
+      <div class="menu-wrap">
+        <div class="menu-title">SEAFOOD STEW</div>
+        <div class="dish">
+          <div class="dish-name">
+            Gavi Tomato Stew with Scallops, SeaShell, Black Tider Shrimp &
+            Tilapia Fish
+          </div>
+        </div>
+      </div>
     </div>
     <div v-if="filter === 'Salads'" class="menu">
       <div class="menu-wrap">
         <div class="menu-title">SALADS</div>
         <div class="dish">
-          <div class="dish-name">Classic Greek Salad</div>
+          <div class="dish-name">Classic Mediterranean Greek Salad</div>
         </div>
         <div class="dish">
           <div class="dish-name">Classic Caesar Salad</div>
@@ -448,6 +492,7 @@ button.active {
 .menu-title {
   width: 100%;
   font-size: 2.4rem;
+  margin-top: 60px;
   font-weight: 100;
   font-style: italic;
   text-align: left;
@@ -475,7 +520,7 @@ button.active {
   .mobile-banner {
     display: block;
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     background-image: url('@/assets/MobileImages/home/9.jpg');
     background-size: cover;
     background-position: center;
@@ -493,6 +538,7 @@ button.active {
     gap: 20px;
     min-width: 0;
     width: 100%;
+    margin-top: 0px;
   }
 
   .menu-wrap {
@@ -503,12 +549,13 @@ button.active {
   }
 
   button {
-    height: 50px; /* Reduce height */
-    width: 150px; /* Reduce width */
-    font-size: 0.75rem; /* Slightly smaller font */
-    padding: 0.6rem 1rem; /* Increase horizontal padding */
-    margin-left: 0.8em;
-    margin-right: 0.8em;
+    height: 46.875px; /* Increase height by 1/4 */
+    width: 142.5px; /* Reduce width */
+    font-size: 0.7rem; /* Slightly smaller font */
+    padding: 0.45rem 0.75rem; /* Increase horizontal padding */
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 3em;
   }
 }
 </style>
