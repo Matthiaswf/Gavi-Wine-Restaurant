@@ -90,7 +90,7 @@
     </div>
     <div v-if="filter === 'Seasonal'" class="menu">
       <div class="menu-wrap">
-        <div class="menu-title">Seasonal Menu</div>
+        <div class="menu-title">SEASONAL MENU</div>
         <div class="dish">
           <div class="dish-name">
             Oven Roasted Oysters in the Shell with Dill Beurre Blanc Sauce (8~9
