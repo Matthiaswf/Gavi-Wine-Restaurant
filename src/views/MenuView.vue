@@ -558,4 +558,15 @@ button.active {
     margin-top: 3em;
   }
 }
+@media (max-width: 844px) {
+  button {
+    height: 46.875px; /* Reduce height by 1/4 */
+    width: 106.875px; /* Reduce width by 1/4 */
+    font-size: 0.7rem; /* Reduce font size by 1/4 */
+    padding: 0; /* Increase horizontal padding */
+    margin-left: 1em; /* Reduce margin by 1/4 */
+    margin-right: 1em; /* Reduce margin by 1/4 */
+    margin-top: 3em; /* Reduce margin by 1/4 */
+  }
+}
 </style>
