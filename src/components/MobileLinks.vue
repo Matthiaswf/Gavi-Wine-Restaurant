@@ -117,7 +117,7 @@ export default {
 }
 
 .self-plug {
-  margin-top: 100px;
+  margin-top: 20px;
   font-style: italic;
 }
 </style>
