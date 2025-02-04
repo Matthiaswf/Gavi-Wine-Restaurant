@@ -53,6 +53,9 @@
           </a>
         </div>
       </li>
+      <li class="self-plug">
+        <a href="https://mattwf.dev" target="_blank">Created by Mattwf</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -111,5 +114,10 @@ export default {
   width: 20px;
   height: 20px;
   margin: 0px 10px;
+}
+
+.self-plug {
+  margin-top: 100px;
+  font-style: italic;
 }
 </style>

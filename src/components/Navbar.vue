@@ -56,6 +56,9 @@
         </div>
       </li>
     </ul>
+    <div class="self-plug">
+      <a href="https://mattwf.dev" target="_blank">Created by Mattwf</a>
+    </div>
   </div>
 </template>
 
@@ -102,6 +105,7 @@ export default {
 }
 
 .nav-links {
+  flex-grow: 1; /* Pushes .self-plug to the bottom */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -138,9 +142,22 @@ export default {
 .mobile-links {
   display: none;
 }
+
+.self-plug {
+  margin-top: auto; /* Pushes itself to the bottom */
+  padding: 30px 0;
+  text-align: center;
+  cursor: pointer;
+  font-style: italic;
+}
+
 /* Mobile */
 
 @media (max-width: 991px) {
+  .self-plug {
+    display: none;
+  }
+
   .container {
     flex-direction: row;
     justify-content: space-between;
