@@ -25,10 +25,8 @@ The goal was to create a fast, elegant website that showcases the restaurant’s
 
 ## Tech Stack
 
-- Vue 3 (Composition API)  
-- Tailwind CSS  
+- Vue 3 (Composition API)   
 - JavaScript, HTML  
-- Vite for build tooling
 
 ---
 
