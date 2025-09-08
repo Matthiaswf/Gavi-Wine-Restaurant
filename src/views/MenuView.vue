@@ -62,7 +62,7 @@
         <div class="menu-title">APPETIZER</div>
         <div class="dish">
           <div class="dish-name">
-            Jamon Serrano, Chevre Goat Cheese & Seasonal Fruit
+            Sweet Pumpkin, Kaymak Cheese & Redcurrant Jam, Homemade Bruschetta
           </div>
         </div>
         <div class="menu-title course">Soup</div>
@@ -110,11 +110,7 @@
         <div class="dish">
           <div class="dish-name">Nuts & Deep-fried Vegetable</div>
         </div>
-        <div class="dish">
-          <div class="dish-name">
-            Chevre Goat Cheese, Lindon Honey & French Pastry
-          </div>
-        </div>
+
         <div class="dish">
           <div class="dish-name">
             Crispy French Fries (with Truffle Aioli Dipping Sauce)
@@ -136,7 +132,7 @@
         <div class="menu-title">CHEESE & CHARCUTERIE</div>
         <div class="dish">
           <div class="dish-name">
-            Jamon Serrano, Chevre Goat Cheese & Seasonal Fruit
+            Jamon Serrano, Dates, Pecorino Cheese & Seasonal Fruit
           </div>
         </div>
         <div class="dish">
@@ -179,6 +175,11 @@
           <div class="dish-name">Spicy Chicken Creamy Pasta</div>
         </div>
         <div class="dish">
+          <div class="dish-name">
+            Bacon, Paprika, Rucola, and Saffron Creamy Spaghetti
+          </div>
+        </div>
+        <div class="dish">
           <div class="dish-name">Black Olive & Anchovy Tapenade Pasta</div>
         </div>
         <div class="dish">
@@ -214,14 +215,14 @@
           <div class="dish-name">Classic Mediterranean Greek Salad</div>
         </div>
         <div class="dish">
-          <div class="dish-name">Classic Caesar Salad</div>
+          <div class="dish-name">Salmon Ceviche & Green Salad</div>
         </div>
         <div class="dish">
           <div class="dish-name">Cajun Shrimp & Hawaiian Style Salad</div>
         </div>
         <div class="dish">
           <div class="dish-name">
-            Buffalo Burrata Cheese & Wild Rucola Salad
+            Goeat Cheese, Nuts, Grapes & Wild Rucola Salad
           </div>
         </div>
       </div>
@@ -250,6 +251,9 @@
         </div>
         <div class="dish">
           <div class="dish-name">Pepperoni & Mozzarella</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Pizza Margherita</div>
         </div>
       </div>
     </div>
@@ -314,6 +318,9 @@
         </div>
         <div class="dish">
           <div class="dish-name">Home Made Lemonade</div>
+        </div>
+        <div class="dish">
+          <div class="dish-name">Home Made Mangoade</div>
         </div>
       </div>
       <div class="menu-wrap">

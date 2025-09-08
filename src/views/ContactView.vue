@@ -17,7 +17,7 @@
           <div class="hours">
             <h5>Hours</h5>
             Monday–Saturday <br />
-            6:00 pm–12:00 am
+            5:00 pm–12:00 am
             <br />
           </div>
           <div class="contact">
